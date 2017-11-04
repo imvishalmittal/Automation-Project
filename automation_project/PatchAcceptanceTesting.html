@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+  <title>
+    QA Process Automation
+  </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>	
+<div class="bg-img">	
+<hr>
+<h1>QA Process Automation</h1>
+<hr><br>
+<h2>Pre-requisite:</h2>
+<table style="width:60%">
+<tr>
+	<td style="width:25%">Does base DB backup exists?</td>
+	<td><input type="radio" name="backupDBConfirmation" onclick="backupDBExists(this.value)" value="yes" checked>Yes<span>
+		<!--<input type="radio" name="backupDBConfirmation" onclick="backupDBExists(this.value)" value="no">No</input>--></td></tr>
+<tr>
+	<td style="width:25%">Test Directory*</td>
+	<td><input type="text" style="width:100%" id="testDirectory" value="C:\vmittal\Self_Learning\TestDir\"/></td>
+</tr>
+</table>
+<br>
+<table style="width:100%" id="prerequisiteTable">
+	<col />
+	<col id="baseConfigColumn" style="visibility:collapse"/>
+<tr>
+    <th>Config Parameter</th>
+    <th>Base Config Value</th> 
+    <th>Upgrade Config Value</th> 
+  </tr>
+  <tr>
+	<td style="width:15%">Build Branch</td>
+	<td>
+		<select style="width:100%" id="baseBuildBranch">
+			<!--<option value="diamond">Diamond(7.x)</option>
+			<option value="emerald">Emerald(8.x)</option>-->
+			<option value="ferrite">Ferrite(9.x)</option>
+		</select>
+	</td>	  
+	<td>
+		<select style="width:100%" id="upgradeBuildBranch">
+			<!--<option value="diamond">Diamond(7.x)</option>
+			<option value="emerald">Emerald(8.x)</option>-->
+			<option value="ferrite">Ferrite(9.x)</option>
+		</select>
+	</td>	  
+  </tr>
+  <tr>
+  <td>Build Zip Path:</td>
+  <td><input style="width:100%" type="text" id="oldBuildZipPath" value="\\files\network\builds\PC\2.5\RELEASES\2.5.3\PolicyCenter2.5.3.zip"></td>
+  <td><input style="width:100%" type="file" id="newBuildZipPath"></td>
+  </tr>
+  <tr>
+  <td>Patch Build Zip Path:</td>
+  <td><input style="width:100%" type="text" value="NA"></td>
+  <td><input style="width:100%" type="file" id="patchBuildZipPath"></td>
+  </tr>
+  <tr>
+    <td>Database Server:</td>
+	<td>
+		<select style="width:100%" id="baseDBServer">
+			<option value="REDSKULL\\SQLSERVER2014">REDSKULL\\SQLSERVER2014</option>
+			<!--<option value="devdb3\\sqlserver2008r2">devdb3\\sqlserver2008r2</option>
+			<option value="REDSKULL\\SQLSERVER2014">REDSKULL\\SQLSERVER2014</option>
+			<option value="REDSKULL\\SQLSERVER2012">REDSKULL\\SQLSERVER2012</option>
+			<option value="devdb4\\SQLSERVER2016">devdb4\\SQLSERVER2016</option>
+			<option value="REDSKULL\\SQLSERVER2008R2">REDSKULL\\SQLSERVER2008R2</option>-->			
+		</select>
+	</td>	  
+	<td>
+		<select style="width:100%" id="upgradeDBServer">
+			<option value="REDSKULL\\SQLSERVER2014">REDSKULL\\SQLSERVER2014</option>
+			<!--<option value="devdb3\\sqlserver2008r2">devdb3\\sqlserver2008r2</option>
+			<option value="REDSKULL\\SQLSERVER2014">REDSKULL\\SQLSERVER2014</option>
+			<option value="REDSKULL\\SQLSERVER2012">REDSKULL\\SQLSERVER2012</option>
+			<option value="devdb4\\SQLSERVER2016">devdb4\\SQLSERVER2016</option>
+			<option value="REDSKULL\\SQLSERVER2008R2">REDSKULL\\SQLSERVER2008R2</option>-->			
+		</select>
+	</td>	  
+  </tr>
+  <tr>
+    <td>Database Name:</td>
+    <td><input style="width:100%" type="text" id="oldDbName"></td>
+	<td><input style="width:100%" type="text" id="newDbName"></td>
+  </tr>
+</table>
+<br>
+<form id="baseConfigForm" style="display:none">
+<hr>
+<h2>Select base configuration steps:</h2>
+<table style="width:15%" id="configurationTable">
+<tr><td style="width:5%"><input name="baseConfigCheckbox" type="checkbox" id="copyBuild" onchange="onCheckboxChange(this.id, this.name)"/><td>Copy build</td></tr>
+<tr><td style="width:5%"><input name="baseConfigCheckbox" type="checkbox" id="unzipBuild" onchange="onCheckboxChange(this.id, this.name)"/><td>Unzip build</td></tr>
+<tr><td style="width:5%"><input name="baseConfigCheckbox" type="checkbox" id="createDB" onchange="onCheckboxChange(this.id, this.name)"/><td>Create database</td></tr>
+<tr><td style="width:5%"><input name="baseConfigCheckbox" type="checkbox" id="updateDBConfig" onchange="onCheckboxChange(this.id, this.name)"/><td>Update Database-config.xml</td></tr>
+<tr><td style="width:5%"><input name="baseConfigCheckbox" type="checkbox" id="dropDB" onchange="onCheckboxChange(this.id, this.name)"/><td>Drop DB</td></tr>
+<tr><td style="width:5%"><input name="baseConfigCheckbox" type="checkbox" id="startServer" onchange="onCheckboxChange(this.id, this.name)"/><td>Start server</td></tr>
+<tr><td style="width:5%"><label type="label" id="importSampleData"/><td>Import Sample Data</td></tr>
+<tr><td style="width:5%"><input name="baseConfigCheckbox" type="checkbox" id="stopServer"/><td>Stop server</td></tr></table><br>
+<button id="runBaseConfigButton" type="button" onClick="runConfig(this.id)"><td>Run base configuration setup</button>
+<br><br>
+<hr>
+<h2>Backup Database:</h2>
+<button type="button" onClick="connectAndBackupDB()">Connect and Backup DB</button>
+<br><br>
+</form>
+<hr>
+<h2>Select configuration steps:</h2>
+<table style="width:15%" id="configurationTable">
+<tr><td style="width:5%"><input name="upgradeConfigCheckbox" type="checkbox" id="copyBuild" onchange="onCheckboxChange(this.id, this.name)"/><td>Copy build&nbsp;&nbsp;<img id="imgUpgCopyBuild" style="display:none;width:10%" src="resources/subprocessing.gif"></td></tr>
+<tr><td style="width:5%"><input name="upgradeConfigCheckbox" type="checkbox" id="unzipBuild" onchange="onCheckboxChange(this.id, this.name)"/><td>Unzip build&nbsp;&nbsp;<img id="imgUpgunzBuild" style="display:none;width:10%" src="resources/subprocessing.gif"></td></tr>
+<tr><td style="width:5%"><input name="upgradeConfigCheckbox" type="checkbox" id="createDB" onchange="onCheckboxChange(this.id, this.name)"/><td>Create database&nbsp;&nbsp;<img id="imgUpgCreateDB" style="display:none;width:10%" src="resources/subprocessing.gif"></td></tr>
+<tr><td style="width:5%"><input name="upgradeConfigCheckbox" type="checkbox" id="updateDBConfig" onchange="onCheckboxChange(this.id, this.name)"/><td>Update Database-config.xml&nbsp;&nbsp;<img id="imgUpgUpdDBConf" style="display:none;width:10%" src="resources/subprocessing.gif"></td></tr>
+<tr><td style="width:5%"><input name="upgradeConfigCheckbox" type="checkbox" id="applyPatch" onchange="onCheckboxChange(this.id, this.name)"/><td>Apply patch&nbsp;&nbsp;<img id="imgApplyPatch" style="display:none;width:10%" src="resources/subprocessing.gif"></td></tr>
+<tr><td style="width:5%"><input name="upgradeConfigCheckbox" type="checkbox" id="updateConfig" onchange="onCheckboxChange(this.id, this.name)"/><td>Update Config.xml<span id="spnConfigUpdate" style="display:inline"><br>(EnableInternalDebugTools)&nbsp;&nbsp;<img id="imgUpdConfigEIT" style="display:none;width:10%" src="resources/subprocessing.gif"></span></td></tr>
+<tr><td style="width:5%"><input name="upgradeConfigCheckbox" type="checkbox" id="dropDB" onchange="onCheckboxChange(this.id, this.name)"/><td>Drop DB&nbsp;&nbsp;<img id="imgUpgDrpDB" style="display:none;width:10%" src="resources/subprocessing.gif"></td></tr>
+<tr><td style="width:5%"><input name="upgradeConfigCheckbox" type="checkbox" id="startServer" onchange="onCheckboxChange(this.id, this.name)"/><td>Start server&nbsp;&nbsp;<img id="imgUpgStrtSrvr" style="display:none;width:10%" src="resources/subprocessing.gif"></td></tr>
+</table><br>
+<button id="runUpgradeConfigButton" type="button" onClick="runConfig(this.id)">Run upgrade configuration setup</button>
+<br><br><hr>
+<h2>Patch Acceptance Testing:</h2>
+<table style="width:60%">
+<tr>
+	<th>Test#</th>
+	<th>Test Name</th>
+	<th>Status/Comments/ReturnedValue</th>
+	<th></th>
+</tr>
+<tr>
+	<td>1.</td>
+	<td>Test title of PolicyCenter app and return version</td>
+	<td><span id="spnTitleVersionDetail" style="display:inline"></span></td>
+	<td><button type="button" style="width:100%" onClick="titleVersionCheck()"" style="display:inline">Run Test</button></td>
+</tr>
+<tr>
+	<td>2.</td>
+	<td>Create a PA submission and return policy number</td>
+	<td><span id="spnPolicyNumber" style="display:inline"></span></td>
+	<td><button type="button" style="width:100%" onClick="createSubmissionTest()"" style="display:inline">Run Test</button></td>
+</tr>
+<tr>
+	<td>3.</td>
+	<td>Import sample data and return status</td>
+	<td><span id="spnImportSampleData" style="display:inline"></span></td>
+	<td><button type="button" style="width:100%" onClick="importSampleDataTest()"" style="display:inline">Run Test</button></td>
+</tr>
+</table>
+<br>
+<!--<h2>Restore Database:</h2>
+<button type="button" onClick="connectAndRestoreDB()">Connect and Restore DB</button>
+<br><br><hr>-->
+<script type="text/javascript" src='ProcessAutomation.js'></script>
+<div id="skm_LockPane" class="LockOff">
+	<img id="loading-image" src="resources/processing.gif" alt="Loading..."/>		
+</div>
+</div> 
+</body>
+</html>
