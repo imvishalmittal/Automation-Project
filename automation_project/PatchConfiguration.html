@@ -7,24 +7,22 @@
   </title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>	
-<div class="bg-img">	
+<body onload="loadConfiguration()">
 <hr>
-
 <h1>Patch Build Configuration</h1>
 <hr>
 <br>
 <br>
 <br>
 <br>
-<table align="center" style="width:60%" id="prerequisiteTable">
+<table align="center" style="width:60%" id="prerequisiteTable" onChange="createConfigurationFile()">
 <tr>
     <th>Config Parameter</th>
     <th>Config Value</th> 
   </tr>
   <tr>
 	<td style="width:15%">Test Directory:</td>
-	<td><input type="text" style="width:100%" id="testDirectory" value="C:\TestDir\"/></td>
+	<td><input type="text" style="width:100%" id="testDirectory"/></td>
   </tr>
   <tr>
 	<td style="width:15%">Build Branch</td>
@@ -38,11 +36,11 @@
   </tr>
   <tr>
   <td>Build Zip Path:</td>
-  <td><input style="width:100%" type="file" id="newBuildZipPath"></td>
+  <td><input style="width:100%" type="file" accept=".zip" id="newBuildZipPath"></td>
   </tr>
   <tr>
   <td>Patch Build Zip Path:</td>
-  <td><input style="width:100%" type="file" id="patchBuildZipPath"></td>
+  <td><input style="width:100%" type="file" accept=".zip" id="patchBuildZipPath"></td>
   </tr>
   <tr>
     <td>Database Server:</td>
@@ -50,10 +48,9 @@
 		<select style="width:100%" id="upgradeDBServer">
 			<option value="REDSKULL\\SQLSERVER2014">REDSKULL\\SQLSERVER2014</option>
 			<option value="devdb3\\sqlserver2008r2">devdb3\\sqlserver2008r2</option>
-			<option value="REDSKULL\\SQLSERVER2014">REDSKULL\\SQLSERVER2014</option>
 			<option value="REDSKULL\\SQLSERVER2012">REDSKULL\\SQLSERVER2012</option>
 			<option value="devdb4\\SQLSERVER2016">devdb4\\SQLSERVER2016</option>
-			<!--<option value="REDSKULL\\SQLSERVER2008R2">REDSKULL\\SQLSERVER2008R2</option>-->
+			<option value="REDSKULL\\SQLSERVER2008R2">REDSKULL\\SQLSERVER2008R2</option>
 		</select>
 	</td>	  
   </tr>
@@ -63,11 +60,11 @@
   </tr>
 </table>
 <br><br><br>
-<button id="runUpgradeConfigButton" style="background-color:yellow;margin-left:auto;margin-right:auto;display:block" type="button" onClick="runConfig(this.id)">Configure and setup build</button>
+<!--<button id="runUpgradeConfigButton" style="background-color:yellow;margin-left:auto;margin-right:auto;display:block" type="button" onClick="runConfig(this.id)">Configure and setup build</button>
+<br><br>-->
+<a align="left" style="margin-left:400px;text-align:left; display:block;" href="QAProcessAutomation.html"><< Back to home</a><a style="margin-right:400px;text-align:right; display:block;" href="PatchTestCases.html">Next to select test cases >></a>
 <br><br>
-<a align="left" style="margin-left:350px;text-align:left; display:block;" href="QAProcessAutomation.html"><< Back</a><a style="margin-right:350px;text-align:right; display:block;" href="QAProcessAutomation.html">Next >></a>
-<br><br>
-<br><br>
+<!--<br><br>
 <br>
 <hr>
 <h2 style="text-align:left">Setup Progress:</h2>
@@ -80,11 +77,10 @@
 <li>Update Config.xml<span id="spnConfigUpdate" style="display:inline"><br>(EnableInternalDebugTools)&nbsp;&nbsp;<img id="imgUpdConfigEIT" style="display:none" width="10" height="10" src="resources/subprocessing.gif"></span></lir>
 <li>Drop DB&nbsp;&nbsp;<img id="imgUpgDrpDB" style="display:none;width:10%" src="resources/subprocessing.gif"></li>
 </ul><br>
-<script type="text/javascript" src='ProcessAutomation.js'></script>
 <div id="skm_LockPane" class="LockOff">
 	<img id="loading-image" src="resources/processing.gif" alt="Loading..."/>		
-</div>
-</div> 
+</div>-->
+<script type="text/javascript" src='ProcessAutomation.js'></script>
 </body>
 </html>
 

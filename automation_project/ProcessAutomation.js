@@ -24,11 +24,11 @@ function runConfig(id){
 	document.getElementById("imgApplyPatch").style.display = "none";	
 	document.getElementById("imgUpdConfigEIT").style.display = "none";	
 	if (id == "runUpgradeConfigButton"){
-		buildZipPath = document.getElementById("newBuildZipPath").value
-		dbName = document.getElementById("newDbName").value
-		dbServer = document.getElementById("upgradeDBServer").value
-		dbServer = dbServer.replace("\\\\","\\")
-		buildBranch = document.getElementById("upgradeBuildBranch").value
+		buildZipPath = document.getElementById("newBuildZipPath").value;
+		dbName = document.getElementById("newDbName").value;
+		dbServer = document.getElementById("upgradeDBServer").value;
+		dbServer = dbServer.replace("\\\\","\\");
+		buildBranch = document.getElementById("upgradeBuildBranch").value;
 		patchPath = document.getElementById("patchBuildZipPath").value
 	}
 	if (confirm("Setup patch build??")){
@@ -65,13 +65,13 @@ function copyBuild(buildZipPath, testDirectory) {
 }
 function unzipBuild(buildZipPath, testDirectory) {    
 	var fso = new ActiveXObject("Scripting.FileSystemObject");		
-	var zipFileName = fso.GetFileName(buildZipPath)
+	var zipFileName = fso.GetFileName(buildZipPath);
 	if(zipFileName == ""){zipFileName = prompt("Please provide build zip filename to be unzipped!!");}
 	var cmdLine = "7z x -o" + testDirectory + zipFileName.replace(".zip", "") + " " + testDirectory + zipFileName;	
 	document.getElementById("imgUpgunzBuild").style.display = "inline";
 	var wsh = new ActiveXObject("WScript.Shell");
 	wsh.Run(cmdLine, 1, true);
-	var buildDir = testDirectory + zipFileName.replace(".zip", "") + "\\"
+	var buildDir = testDirectory + zipFileName.replace(".zip", "") + "\\";
 	if (fso.FileExists(buildDir + "PolicyCenter.zip")){
 		cmdLine = "7z x -o" + buildDir + "PolicyCenter " + buildDir + "PolicyCenter.zip";
 		wsh.Run(cmdLine, 1, true);
@@ -145,7 +145,7 @@ function applyPatch(buildBranch, buildDir, patchPath, buildStatus) {
 	if (patchPath == ""){var patchPath = prompt("Please provide patch build zip path");}	
 
 	var fso = new ActiveXObject("Scripting.FileSystemObject");		
-	var zipFileName = fso.GetFileName(patchPath)
+	var zipFileName = fso.GetFileName(patchPath);
 
 	var cmdLineCopyPatch = "xcopy " + patchPath + " " + buildDir;			
 	var cmdLineUnzipPatch = "7z x -o" + buildDir + " " + buildDir + zipFileName + " -y";	
@@ -203,7 +203,7 @@ function updateParamValue(buildDir, configFile, paramToUpdate){
 function startServer(buildDir) {
 	var wsh, cmdLineDevStart;
 	if (buildDir == undefined){var buildDir = prompt("Please provide build directory path:\n(like: C:\\test\\PolicyCenter807\\PolicyCenter\\)");}	
-	cmdLineDevStart = buildDir + "\\bin\\gwpc.bat dev-start"
+	cmdLineDevStart = buildDir + "\\bin\\gwpc.bat dev-start";
     	
 	wsh = new ActiveXObject("WScript.Shell");	
 	document.getElementById("imgUpgStrtSrvr").style.display = "inline";
@@ -271,4 +271,37 @@ function importSampleDataTest(){
 	var toPrint = output.StdOut.ReadAll();
 	alert(toPrint);
 	document.getElementById("spnImportSampleData").innerText = 'Import Status:   ' + toPrint;
+}
+function createConfigurationFile(){
+    var testDirectory, buildZipPath, dbName, dbServer, buildBranch, patchPath;
+    testDirectory= document.getElementById("testDirectory").value;
+    buildZipPath = document.getElementById("newBuildZipPath").value;
+    dbName = document.getElementById("newDbName").value;
+    dbServer = document.getElementById("upgradeDBServer").value;
+    //dbServer = dbServer.replace("\\\\","\\");
+    buildBranch = document.getElementById("upgradeBuildBranch").value;
+    patchPath = document.getElementById("patchBuildZipPath").value;
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    if(fso.fileExists("C:\\Configuration.csv")){fso.DeleteFile("C:\\Configuration.csv");}
+    newFile = fso.OpenTextFile("C:\\Configuration.csv", 8, true);
+    newFile.WriteLine("testDirectory," + testDirectory);
+    newFile.WriteLine("newBuildZipPath," + buildZipPath);
+    newFile.WriteLine("newDbName," + dbName);
+    newFile.WriteLine("upgradeDBServer," + dbServer);
+    newFile.WriteLine("upgradeBuildBranch," + buildBranch);
+    newFile.WriteLine("patchBuildZipPath," + patchPath);
+    newFile.close();
+    fso.close;
+}
+function loadConfiguration(){
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    if(fso.fileExists("C:\\Configuration.csv")){
+    	var configFile= fso.OpenTextFile("C:\\Configuration.csv", 1, false)
+        while(!configFile.AtEndOfStream) {
+            var splitLine= configFile.ReadLine().split(",");
+            if(splitLine[1] != ""){document.getElementById(splitLine[0]).value = splitLine[1];}
+        }
+        configFile.Close();
+    }
+    fso.close;
 }
