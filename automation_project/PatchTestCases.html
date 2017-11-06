@@ -12,6 +12,16 @@
 <hr>
 <a href="QAProcessAutomation.html"><img src="resources/home-icon.png" height="30" width="30"/></a>
 <br><br><br><br>
+    &nbsp;&nbsp;<button style="margin-left:300px" onClick="addRemoveRow(this.id)" id="add">Add</button>&nbsp;&nbsp;<button onClick="addRemoveRow(this.id)" id="remove">Remove</button>
+<br>
+&nbsp;&nbsp;<table id="testCasesList" style="margin-left:300px" style="width:80%">
+    <tr>
+        <th style="width:3%"><input type="checkbox" id="selectAll" onChange="selectDeselectAllTestCases()"></th>
+        <th style="width:40%">Test Case</th>
+        <th style="width:10%">Input Parameters</th>
+        <th style="width:10%">Return Parameter</th>
+    </tr>
+</table>
 <hr>
 <a align="left" style="margin-left:400px;text-align:left; display:block;" href="PatchConfiguration.html"><< Back to Configuration</a><a style="margin-right:400px;text-align:right; display:block;" href="QAProcessAutomation.html">Next to Run configuratoin >></a>
 </body>
