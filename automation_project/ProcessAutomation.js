@@ -305,3 +305,20 @@ function loadConfiguration(){
     }
     fso.close;
 }
+function addRemoveRow(id) {
+    var x = document.getElementById("testCasesList").rows.length
+    var table = document.getElementById("testCasesList");
+
+    if(id == "add"){
+        var row = table.insertRow(x);
+        row.insertCell(0).innerHTML = "<input type=\"checkbox\" name=\"testCaseSelector\"/>";
+        row.insertCell(1).innerHTML = "<input style='width:100%' accept='.gs, .js' type='file'>";
+        row.insertCell(2).innerHTML = "";
+        row.insertCell(3).innerHTML = "";
+	}
+	else if(id == "remove")
+	{
+		alert("Code to be written");
+    }
+}
+
