@@ -11,25 +11,37 @@
 <h1>Patch Test Cases</h1>
 <hr>
 <a href="QAProcessAutomation.html"><img src="resources/home-icon.png" height="30" width="30"/></a>
-<br><br><br><br>
-    &nbsp;&nbsp;<button style="margin-left:300px" onClick="addRemoveRow(this.id)" id="add">Add</button>&nbsp;&nbsp;<button onClick="addRemoveRow(this.id)" id="remove">Remove</button>
+&nbsp;&nbsp;<div id="buttonSet"><button style="margin-left:200px" onClick="addTestCase(this.id)" id="addSeleniumTestCase">Add Selenium Test Case Flow(UI)</button>&nbsp;&nbsp;<button id="addGosuTest">Add Gosu Test</button></div>
 <br>
-&nbsp;&nbsp;<table id="testCasesList" style="margin-left:300px" style="width:80%">
-    <tr>
-        <th style="width:3%;text-align:left"><input type="checkbox" id="selectAll" onChange="selectDeselectAllTestCases()"></th>
+&nbsp;&nbsp;<table id="testCreatorTable" style="margin-left:200px;width:80%;visibility: hidden">
+    <tr bgcolor="aqua">
         <th style="width:40%">Test Case</th>
-        <th style="width:10%">Input Parameters</th>
-        <th style="width:10%">Return Parameter</th>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="testCaseSelector"></input></td>
-        <td></td>
-        <td></td>
-        <td></td>
     </tr>
 </table>
+<br>
+<button id="addToListButton" style="visibility: hidden;margin-left: 900px" onClick="addTestToList()">Add test flow to list</button>
 <br><br>
-<a align="left" style="margin-left:400px;text-align:left; display:block;" href="PatchConfiguration.html"><< Back to Configuration</a><a style="margin-right:400px;text-align:right; display:block;" href="QAProcessAutomation.html">Next to Run configuratoin >></a>
+<a align="left" style="margin-left:100px;text-align:left; display:block;" href="PatchConfiguration.html"><< Back to Configuration</a><a style="margin-right:100px;text-align:right; display:block;" href="QAProcessAutomation.html">Next to Run configuratoin >></a>
+<hr>
+<br>
+<h2>Test Case List:</h2>
+<br>
+<table id="testCasesList" style="margin-left:200px;width:80%">
+    <tr bgcolor="#e9967a">
+        <th style="width:10%">Test#</th>
+        <th style="width:85%">Test Flow Steps</th>
+        <th></th>
+    </tr>
+</table>
+<div id="transactionSelector" style="display:none">
+    <select id="select:" style="width:100%" onChange="populateTransactionParameters(this.id)">
+        <option>Select Transaction Type</option>
+        <option>Create New Account</option>
+        <option>Policy Issuance</option>
+        <option>Policy Change</option>
+        <option>Policy Cancellation</option>
+    </select>
+</div>
 <script type="text/javascript" src='ProcessAutomation.js'></script>
 </body>
 </html>

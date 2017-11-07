@@ -1,4 +1,5 @@
 var d = new Date();
+var testFlow = "";
 function backupDBExists(existence){
 	if (existence == "no"){		
 		document.getElementById("prerequisiteTable").style.visibility="visible";
@@ -38,9 +39,10 @@ function runConfig(id){
 		createDB(dbName, dbServer);
 		updateDBConfig(dbServer, dbName, buildBranch, buildDir);
 		var buildStatus = true;
-		applyPatch(buildBranch, buildDir, patchPath, buildStatus);
+		if(buildBranch != "granite"){applyPatch(buildBranch, buildDir, patchPath, buildStatus);}
 		updateConfig(buildBranch, buildDir);
 		dropDB(buildBranch, buildDir);
+		startServer(buildDir);
 		skm_LockScreen('LockOff');
 	}				
 }
@@ -304,21 +306,122 @@ function loadConfiguration(){
         configFile.Close();
     }
     fso.close;
+    hidePatchOption();
 }
-function addRemoveRow(id) {
-    var x = document.getElementById("testCasesList").rows.length
-    var table = document.getElementById("testCasesList");
+function addTestCase(id) {
+	document.getElementById("testCreatorTable").style.visibility = "visible";
+    document.getElementById("addToListButton").style.visibility = "visible";
+	document.getElementById("buttonSet").style.visibility = "hidden";
+    var x = document.getElementById("testCreatorTable").rows.length
+    var table = document.getElementById("testCreatorTable");
 
-    if(id == "add"){
+    if(id == "addSeleniumTestCase"){
         var row = table.insertRow(x);
-        row.insertCell(0).innerHTML = "<input type=\"checkbox\" name=\"testCaseSelector\"/>";
-        row.insertCell(1).innerHTML = "<input style='width:100%' accept='.gs, .js' type='file'>";
-        row.insertCell(2).innerHTML = "";
-        row.insertCell(3).innerHTML = "";
+        //row.insertCell(0).innerHTML = "<input type=\"checkbox\" name=\"testCaseSelector\"/>";
+        var uniqueTableId = "testFlowTable";
+        row.insertCell(0).innerHTML = "<table id=" + uniqueTableId + " style='width:100%'><tr bgcolor='#e9967a'><th>Steps</th><th>Transaction</th><th>Input Params</th><th>Output Params</th><th><button id='add' onClick='addRemoveTransactionRow(this.id, 0, \"" + uniqueTableId + "\")'>+</button></th></tr></table>";
 	}
-	else if(id == "remove")
+	else if(id == "addGosuTest")
 	{
 		alert("Code to be written");
     }
 }
+function hidePatchOption(){
+    var buildBranch = document.getElementById("upgradeBuildBranch").value;
+	if(buildBranch == "granite"){
+        document.getElementById("patchBuildDetailsRow").style.display = "none";
+    }
+    else{
+        document.getElementById("patchBuildDetailsRow").style.display = "table-row";
+	}
+}
+function addRemoveTransactionRow(id, delRow, uniqueTableId) {
+    var x = document.getElementById(uniqueTableId).rows.length
+    var table = document.getElementById(uniqueTableId);
 
+    if(id == "add"){
+        var row = table.insertRow(x);
+        var uniqueKey = Math.random().toString(36).substr(2, 9);
+        row.insertCell(0).innerHTML = "Step " + x;
+        row.insertCell(1).innerHTML = document.getElementById("transactionSelector").innerHTML;
+        row.cells(1).innerHTML = (row.cells(1).innerHTML).replace("select:", "select:" + uniqueKey + ":" + uniqueTableId);
+        row.insertCell(2).innerHTML = "<input style='width:98.5%;background-color: #9e9e9e' id='input:" + uniqueKey + ":" + uniqueTableId + "' readonly></input>";
+        row.insertCell(3).innerHTML = "<input style='width:98.5%;background-color: #9e9e9e' id='output:" + uniqueKey + ":" + uniqueTableId + "' readonly></input>";
+        row.insertCell(4).innerHTML = "<button id='remove' onClick='addRemoveTransactionRow(this.id, \"" + x + "\", \"" + uniqueTableId + "\")'>-</button>"
+    }
+    else if(id == "remove")
+    {
+        table.deleteRow(delRow);
+    }
+}
+function populateTransactionParameters(id) {
+	var selection = document.getElementById(id).value
+    var splitId= id.split(":");
+	var inputParamId = "input:" + splitId[1] + ":" + splitId[2];
+    var outputParamId = "output:" + splitId[1] + ":" + splitId[2];
+    var tableId = splitId[2];
+    var x = document.getElementById(tableId).rows.length
+    if(x == 2 && selection != "Create New Account") {
+        document.getElementById(inputParamId).style.backgroundColor = 'white';
+        document.getElementById(inputParamId).readOnly = false;
+    }
+
+    if(selection == "Create New Account"){
+        document.getElementById(inputParamId).value = "";
+        document.getElementById(outputParamId).value = "Account#"
+    }
+	else if(selection == "Policy Issuance"){
+    	document.getElementById(inputParamId).value = "Account#";
+        document.getElementById(outputParamId).value = "Policy#"
+	}
+	else if(selection == "Policy Change"){
+        document.getElementById(inputParamId).value = "Policy*#; AddDays*#"
+        document.getElementById(outputParamId).value = "Submission#"
+        if(x!=2){
+        	document.getElementById(inputParamId).value = "AddDays*#";
+            document.getElementById(inputParamId).style.backgroundColor = 'white';
+            document.getElementById(inputParamId).readOnly = false;
+        }
+	}
+
+	if(x!=2 && selection !="Policy Change"){document.getElementById(inputParamId).value = "";}
+}
+function addTestToList(){
+    document.testFlow ="";
+	createTestFlow();
+	if(document.testFlow != "" || document.testFlow.indexOf("Select Transaction Type") >= 0){
+        var x = document.getElementById("testCasesList").rows.length
+        var table = document.getElementById("testCasesList");
+
+        var row = table.insertRow(x);
+        var uniqueKey = Math.random().toString(36).substr(2, 9);
+        row.insertCell(0).innerHTML = "Test Case " + x;
+        row.insertCell(1).innerHTML = document.testFlow;
+        row.insertCell(2).innerHTML = "<button id='remove' onClick='addRemoveTransactionRow(this.id, \"" + (document.getElementById("testCasesList").rows.length -1) + "\", \"testCasesList\")'>-</button>"
+
+        var toDeleteRowsCount = document.getElementById("testCreatorTable").rows.length
+        var toDeleteFromTable = document.getElementById("testCreatorTable");
+        for (var i = 1 ; i < toDeleteRowsCount ; i++){
+            toDeleteFromTable.deleteRow(i);
+        }
+        document.getElementById("testCreatorTable").style.visibility = "hidden";
+        document.getElementById("addToListButton").style.visibility = "hidden";
+        document.getElementById("buttonSet").style.visibility = "visible";
+
+	}
+	else{
+        alert("One or More missing transactions!!!");
+	}
+}
+function createTestFlow(){
+    var x = document.getElementById("testFlowTable").rows.length
+
+    var selectElementArray = document.getElementsByTagName("select");
+
+    for (var i = 0 ; i < selectElementArray.length -1 ; i++){
+    	var stepId = document.testFlow + selectElementArray[i].id;
+        var splitId= stepId.split(":");
+        var inputParamId = "input:" + splitId[1] + ":" + splitId[2];
+        document.testFlow = document.testFlow + selectElementArray[i].value + "(" + document.getElementById(inputParamId).value + ") --> "
+    }
+}

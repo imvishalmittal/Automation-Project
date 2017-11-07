@@ -28,10 +28,11 @@
   <tr>
 	<td style="width:15%">Build Branch</td>
 	<td>
-		<select style="width:100%" id="upgradeBuildBranch">
+		<select style="width:100%" id="upgradeBuildBranch" onChange="hidePatchOption()">
 			<option value="diamond">Diamond(7.x)</option>
 			<option value="emerald">Emerald(8.x)</option>
 			<option value="ferrite">Ferrite(9.x)</option>
+            <option value="granite">Granite(10.x)</option>
 		</select>
 	</td>	  
   </tr>
@@ -39,7 +40,7 @@
   <td>Build Zip Path:</td>
   <td><input style="width:100%" type="file" accept=".zip" id="newBuildZipPath"></td>
   </tr>
-  <tr>
+  <tr id="patchBuildDetailsRow">
   <td>Patch Build Zip Path:</td>
   <td><input style="width:100%" type="file" accept=".zip" id="patchBuildZipPath"></td>
   </tr>
