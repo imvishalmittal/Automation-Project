@@ -2,15 +2,44 @@ h1 {
 	text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
 	//background-color:#ADA2F2;
 	border:5px solid black;
-	height: 10%;		
+	height: 5%;
 	}
 h1, h2 {
 	text-align:center;
 	color:brown;	 
 	 }
-p, table, th, td, input {
+p, table, input {
 	color:black;
     border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+p, tr, th, td, input {
+	color:black;
+	border: 1px solid black;
+	border-radius: 4px;
+	text-align: center;
+}
+button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.leftpaneButton{
+	width: 200px;
+}
+button:hover {
+	color: blue;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
   .LockOff { 
 	 display: none; 

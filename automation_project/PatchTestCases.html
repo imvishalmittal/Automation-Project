@@ -7,11 +7,23 @@
     </title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body onload="writeTestListToPage()">
 <hr>
 <h1>Patch Test Cases</h1>
 <hr>
-<a href="QAProcessAutomation.html"><img src="resources/home-icon.png" height="30" width="30"/></a>
-&nbsp;&nbsp;<div id="buttonSet"><button style="margin-left:200px" onClick="addTestCase(this.id)" id="addSeleniumTestCase">Add Selenium Test Case Flow(UI)</button>&nbsp;&nbsp;<button id="addGosuTest">Add Gosu Test</button></div>
+<div id="buttonSet">
+    <button class="button leftpaneButton">Home&nbsp;&nbsp;&nbsp;<img src="resources/home-icon.png" height="15" width="15"/></button>
+    <br>
+    <button class="button leftpaneButton" id="addGosuTest">Add Gosu Test&nbsp;&nbsp;&nbsp;<img src="resources/gosu.png" height="15" width="15"/></button>
+    <br>
+    <button class="button leftpaneButton" onClick="addTestCase(this.id)" id="addSeleniumTestCase">Add Selenium Test&nbsp;&nbsp;&nbsp;<img src="resources/selenium.png" height="15" width="20"/></button>
+    <br>
+    <button class="button leftpaneButton" onClick="showTestList()" id="showTestList">Show Test List</button>
+    <br>
+    <button class="button leftpaneButton" onclick="window.location.href='PatchConfiguration.html'" title="PatchConfiguration"><< Back</button>
+    <br>
+    <button class="button leftpaneButton" onclick="window.location.href='ReviewAndRun.html'" title="ReviewAndRun">Next >></button>
+</div>
 <br>
 &nbsp;&nbsp;<table id="testCreatorTable" style="margin-left:200px;width:80%;visibility: hidden">
     <tr bgcolor="aqua">
@@ -20,12 +32,10 @@
 </table>
 <br>
 <button id="addToListButton" style="visibility: hidden;margin-left: 900px" onClick="addTestToList()">Add test flow to list</button>
-<br><br>
-<a align="left" style="margin-left:100px;text-align:left; display:block;" href="PatchConfiguration.html"><< Back to Configuration</a><a style="margin-right:100px;text-align:right; display:block;" href="QAProcessAutomation.html">Next to Run configuratoin >></a>
+<div id="testCaseListSection" style="visibility: hidden">
 <hr>
-<br>
 <h2>Test Case List:</h2>
-<br>
+
 <table id="testCasesList" style="margin-left:200px;width:80%">
     <tr bgcolor="#e9967a">
         <th style="width:10%">Test#</th>
@@ -33,6 +43,7 @@
         <th></th>
     </tr>
 </table>
+</div>
 <div id="transactionSelector" style="display:none">
     <select id="select:" style="width:100%" onChange="populateTransactionParameters(this.id)">
         <option>Select Transaction Type</option>

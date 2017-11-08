@@ -312,11 +312,11 @@ function addTestCase(id) {
 	document.getElementById("testCreatorTable").style.visibility = "visible";
     document.getElementById("addToListButton").style.visibility = "visible";
 	document.getElementById("buttonSet").style.visibility = "hidden";
-    var x = document.getElementById("testCreatorTable").rows.length
+    //var x = document.getElementById("testCreatorTable").rows.length
     var table = document.getElementById("testCreatorTable");
 
     if(id == "addSeleniumTestCase"){
-        var row = table.insertRow(x);
+        var row = table.insertRow();
         //row.insertCell(0).innerHTML = "<input type=\"checkbox\" name=\"testCaseSelector\"/>";
         var uniqueTableId = "testFlowTable";
         row.insertCell(0).innerHTML = "<table id=" + uniqueTableId + " style='width:100%'><tr bgcolor='#e9967a'><th>Steps</th><th>Transaction</th><th>Input Params</th><th>Output Params</th><th><button id='add' onClick='addRemoveTransactionRow(this.id, 0, \"" + uniqueTableId + "\")'>+</button></th></tr></table>";
@@ -340,7 +340,7 @@ function addRemoveTransactionRow(id, delRow, uniqueTableId) {
     var table = document.getElementById(uniqueTableId);
 
     if(id == "add"){
-        var row = table.insertRow(x);
+        var row = table.insertRow();
         var uniqueKey = Math.random().toString(36).substr(2, 9);
         row.insertCell(0).innerHTML = "Step " + x;
         row.insertCell(1).innerHTML = document.getElementById("transactionSelector").innerHTML;
@@ -386,32 +386,34 @@ function populateTransactionParameters(id) {
 
 	if(x!=2 && selection !="Policy Change"){document.getElementById(inputParamId).value = "";}
 }
-function addTestToList(){
-    document.testFlow ="";
-	createTestFlow();
-	if(document.testFlow != "" || document.testFlow.indexOf("Select Transaction Type") >= 0){
-        var x = document.getElementById("testCasesList").rows.length
-        var table = document.getElementById("testCasesList");
-
-        var row = table.insertRow(x);
-        var uniqueKey = Math.random().toString(36).substr(2, 9);
-        row.insertCell(0).innerHTML = "Test Case " + x;
-        row.insertCell(1).innerHTML = document.testFlow;
-        row.insertCell(2).innerHTML = "<button id='remove' onClick='addRemoveTransactionRow(this.id, \"" + (document.getElementById("testCasesList").rows.length -1) + "\", \"testCasesList\")'>-</button>"
-
-        var toDeleteRowsCount = document.getElementById("testCreatorTable").rows.length
-        var toDeleteFromTable = document.getElementById("testCreatorTable");
-        for (var i = 1 ; i < toDeleteRowsCount ; i++){
-            toDeleteFromTable.deleteRow(i);
+function addTestToList() {
+    document.testFlow = "";
+    createTestFlow();
+    if (document.testFlow != "" && document.testFlow.indexOf("Select Transaction Type") < 0) {
+        var fso = new ActiveXObject("Scripting.FileSystemObject");
+        var newFile = fso.OpenTextFile("C:\\TestFile.csv", 8, true);
+        var dataRows = newFile.Line;
+        newFile.WriteLine("Test Case " + dataRows + "," + document.testFlow);
+        newFile.close();
+        fso.close;
+        var toDeleteRowsCount1 = document.getElementById("testCreatorTable").rows.length
+        var toDeleteFromTable1 = document.getElementById("testCreatorTable");
+        for (var i = 1 ; i < toDeleteRowsCount1 ; i++){
+            toDeleteFromTable1.deleteRow(i);
+        }
+        var toDeleteRowsCount2 = document.getElementById("testCasesList").rows.length
+        var toDeleteFromTable2 = document.getElementById("testCasesList");
+        for (var j = 1 ; j < toDeleteRowsCount2 ; j++){
+            toDeleteFromTable2.deleteRow(j);
         }
         document.getElementById("testCreatorTable").style.visibility = "hidden";
         document.getElementById("addToListButton").style.visibility = "hidden";
         document.getElementById("buttonSet").style.visibility = "visible";
-
-	}
-	else{
+        alert("Test added to list!!!");
+    }
+    else{
         alert("One or More missing transactions!!!");
-	}
+    }
 }
 function createTestFlow(){
     var x = document.getElementById("testFlowTable").rows.length
@@ -424,4 +426,34 @@ function createTestFlow(){
         var inputParamId = "input:" + splitId[1] + ":" + splitId[2];
         document.testFlow = document.testFlow + selectElementArray[i].value + "(" + document.getElementById(inputParamId).value + ") --> "
     }
+}
+function writeTestListToPage() {
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    if (fso.fileExists("C:\\TestFile.csv")) {
+        var existingFile = fso.OpenTextFile("C:\\TestFile.csv", 1, false);
+        var table = document.getElementById("testCasesList");
+        while (!existingFile.AtEndOfStream) {
+            var lineContent = existingFile.ReadLine();
+            var splitLineContent = lineContent.split(",");
+            var row = table.insertRow();
+            row.insertCell(0).innerHTML = splitLineContent[0];
+            row.insertCell(1).innerHTML = splitLineContent[1];
+            row.insertCell(2).innerHTML = "<button id='remove' onClick='addRemoveTransactionRow(this.id, \"" + (document.getElementById("testCasesList").rows.length - 1) + "\", \"testCasesList\")'>-</button>"
+        }
+        existingFile.close();
+    }
+    fso.close();
+}
+function showTestList() {
+	if (document.getElementById("showTestList").innerHTML == "Show Test List"){
+        document.getElementById("showTestList").innerHTML = "Hide Test List";
+		document.getElementById("testCaseListSection").style.visibility = "visible";
+	}
+	else{
+        document.getElementById("showTestList").innerHTML = "Show Test List";
+        document.getElementById("testCaseListSection").style.visibility = "hidden";
+	}
+}
+function navigateToPage(title) {
+
 }
