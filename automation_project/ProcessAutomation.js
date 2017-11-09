@@ -252,28 +252,6 @@ function sleep(delay) {
     var start = new Date().getTime();
     while (new Date().getTime() < start + delay);
 }
-function titleVersionCheck(){
-	var wsh = new ActiveXObject("WScript.Shell");
-	var output = wsh.exec("node C:\\vmittal\\Self_Learning\\Demo-Project\\automation_project\\test_files\\title_test.js");
-	wsh.close;
-	var toPrint = output.StdOut.ReadAll();
-	document.getElementById("spnTitleVersionDetail").innerText = 'Title:    ' + toPrint;
-}
-function createSubmissionTest(){
-	var wsh = new ActiveXObject("WScript.Shell");
-	var output = wsh.exec("node C:\\vmittal\\Self_Learning\\Demo-Project\\automation_project\\test_files\\create_submission_test.js");
-	wsh.close;
-	var toPrint = output.StdOut.ReadAll();
-	document.getElementById("spnPolicyNumber").innerText = 'Policy number:   ' + toPrint;
-}
-function importSampleDataTest(){
-	var wsh = new ActiveXObject("WScript.Shell");
-	var output = wsh.exec("node C:\\vmittal\\Self_Learning\\Demo-Project\\automation_project\\test_files\\import_sample_data_test.js");
-	wsh.close;
-	var toPrint = output.StdOut.ReadAll();
-	alert(toPrint);
-	document.getElementById("spnImportSampleData").innerText = 'Import Status:   ' + toPrint;
-}
 function createConfigurationFile(){
     var testDirectory, buildZipPath, dbName, dbServer, buildBranch, patchPath;
     testDirectory= document.getElementById("testDirectory").value;
@@ -311,7 +289,8 @@ function loadConfiguration(){
 function addTestCase(id) {
 	document.getElementById("testCreatorTable").style.visibility = "visible";
     document.getElementById("addToListButton").style.visibility = "visible";
-	document.getElementById("buttonSet").style.visibility = "hidden";
+    document.getElementById("addToListCancelButton").style.visibility = "visible";
+	document.getElementById("buttonSet").style.visibility = "collapse";
     //var x = document.getElementById("testCreatorTable").rows.length
     var table = document.getElementById("testCreatorTable");
 
@@ -398,22 +377,24 @@ function addTestToList() {
         fso.close;
         var toDeleteRowsCount1 = document.getElementById("testCreatorTable").rows.length
         var toDeleteFromTable1 = document.getElementById("testCreatorTable");
-        for (var i = 1 ; i < toDeleteRowsCount1 ; i++){
-            toDeleteFromTable1.deleteRow(i);
+        for (var i = toDeleteRowsCount1 ; i > 0 ; i--){
+            toDeleteFromTable1.deleteRow(i-1);
         }
         var toDeleteRowsCount2 = document.getElementById("testCasesList").rows.length
         var toDeleteFromTable2 = document.getElementById("testCasesList");
-        for (var j = 1 ; j < toDeleteRowsCount2 ; j++){
-            toDeleteFromTable2.deleteRow(j);
+        for (var j = toDeleteRowsCount2 ; j > 1 ; j--){
+            toDeleteFromTable2.deleteRow(j-1);
         }
         document.getElementById("testCreatorTable").style.visibility = "hidden";
         document.getElementById("addToListButton").style.visibility = "hidden";
+        document.getElementById("addToListCancelButton").style.visibility = "hidden";
         document.getElementById("buttonSet").style.visibility = "visible";
         alert("Test added to list!!!");
     }
     else{
         alert("One or More missing transactions!!!");
     }
+    writeTestListToPage();
 }
 function createTestFlow(){
     var x = document.getElementById("testFlowTable").rows.length
@@ -454,6 +435,50 @@ function showTestList() {
         document.getElementById("testCaseListSection").style.visibility = "hidden";
 	}
 }
-function navigateToPage(title) {
+function editTestCasesList() {
+    if (document.getElementById("editTestCasesList").innerHTML == "Edit"){
+        document.getElementById("editTestCasesList").innerHTML = "Save";
+        document.getElementById("testCaseListEditCol").style.visibility = "visible";
+    }
+    else{
+        document.getElementById("editTestCasesList").innerHTML = "Edit";
+        document.getElementById("testCaseListEditCol").style.visibility = "collapse";
+        writeTestListToFile();
+    }
+}
+function writeTestListToFile() {
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    if(fso.fileExists("C:\\TestFile.csv")){fso.DeleteFile("C:\\TestFile.csv");}
 
+    var newFile = fso.OpenTextFile("C:\\TestFile.csv", 8, true);
+    var table = document.getElementById("testCasesList");
+    for (var r = 1; r < table.rows.length; r++){
+        newFile.WriteLine("Test Case " + r + "," + table.rows[r].cells[1].innerHTML);
+	}
+    newFile.close();
+    fso.close;
+}
+
+//*********************************Tests**************************
+function titleVersionCheck(){
+    var wsh = new ActiveXObject("WScript.Shell");
+    var output = wsh.exec("node C:\\vmittal\\Self_Learning\\Demo-Project\\automation_project\\test_files\\title_test.js");
+    wsh.close;
+    var toPrint = output.StdOut.ReadAll();
+    document.getElementById("spnTitleVersionDetail").innerText = 'Title:    ' + toPrint;
+}
+function createSubmissionTest(){
+    var wsh = new ActiveXObject("WScript.Shell");
+    var output = wsh.exec("node C:\\vmittal\\Self_Learning\\Demo-Project\\automation_project\\test_files\\create_submission_test.js");
+    wsh.close;
+    var toPrint = output.StdOut.ReadAll();
+    document.getElementById("spnPolicyNumber").innerText = 'Policy number:   ' + toPrint;
+}
+function importSampleDataTest(){
+    var wsh = new ActiveXObject("WScript.Shell");
+    var output = wsh.exec("node C:\\vmittal\\Self_Learning\\Demo-Project\\automation_project\\test_files\\import_sample_data_test.js");
+    wsh.close;
+    var toPrint = output.StdOut.ReadAll();
+    alert(toPrint);
+    document.getElementById("spnImportSampleData").innerText = 'Import Status:   ' + toPrint;
 }

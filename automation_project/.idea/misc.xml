@@ -7,6 +7,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/automated_components/selenium_components/package.json" />
+  </component>
   <component name="masterDetails">
     <states>
       <state key="ProjectJDKs.UI">

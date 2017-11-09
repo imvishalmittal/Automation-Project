@@ -16,14 +16,14 @@
 <button class="button leftpaneButton" onclick="window.location.href='PatchTestCases.html'" title="PatchTestCases">Next >></button>
 <br>
 <button class="button leftpaneButton" onclick="window.location.href='QAProcessAutomation.html'" title="QAProcessAutomation"><< Back</button>
-<table align="center" style="width:60%;" id="prerequisiteTable" onChange="createConfigurationFile()">
+<table align="center" style="width:60%;" id="prerequisiteTable">
 <tr style="background-color: lightsalmon">
     <th>Config Parameter</th>
     <th>Config Value</th> 
   </tr>
   <tr>
 	<td style="width:15%">Test Directory:</td>
-	<td><input type="text" style="width:100%" id="testDirectory"/></td>
+	<td><input type="text" style="width:100%;text-align: left" id="testDirectory"/></td>
   </tr>
   <tr>
 	<td style="width:15%">Build Branch</td>
@@ -58,10 +58,12 @@
   </tr>
   <tr>
     <td>Database Name:</td>
-	<td><input style="width:100%" type="text" id="newDbName"></td>
+	<td><input style="width:100%;text-align: left" type="text" id="newDbName"></td>
   </tr>
 </table>
-<br><br><br>
+<br>
+<button style="margin-left: 900px" class="submitButton" onclick="createConfigurationFile()">Save</button>
+<br><br>
 <!--<button id="runUpgradeConfigButton" style="background-color:yellow;margin-left:auto;margin-right:auto;display:block" type="button" onClick="runConfig(this.id)">Configure and setup build</button>
 <br><br>-->
 <br><br>
