@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="006f35f7-b456-400c-8a17-60485cfbd2d8" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/automated_components/Selenium_components.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/automated_components/selenium_components/cancelPolicyTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/automated_components/selenium_components/createNewAccountTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/automated_components/selenium_components/createNewSubmissionTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/automated_components/selenium_components/issuePAPolicyChangeTest.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/create_submission_test.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/import_sample_data_test.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/title_test.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PatchConfiguration.html" afterPath="$PROJECT_DIR$/PatchConfiguration.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PatchTestCases.html" afterPath="$PROJECT_DIR$/PatchTestCases.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProcessAutomation.js" afterPath="$PROJECT_DIR$/ProcessAutomation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QAProcessAutomation.html" afterPath="$PROJECT_DIR$/QAProcessAutomation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReviewAndRun.html" afterPath="$PROJECT_DIR$/ReviewAndRun.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/automated_components/selenium_components/import_sample_data_test.js" afterPath="$PROJECT_DIR$/automated_components/selenium_components/import_sample_data_test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
     </list>
     <ignored path="automation_project.iws" />
@@ -33,12 +39,12 @@
       <file leaf-file-name="PatchConfiguration.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PatchConfiguration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-675">
-              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            <state relative-caret-position="231">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <element signature="e#354#360#0" expanded="true" />
-                <element signature="e#360#366#0" expanded="true" />
-                <element signature="e#366#372#0" expanded="true" />
+                <element signature="e#344#350#0" expanded="true" />
+                <element signature="e#350#356#0" expanded="true" />
+                <element signature="e#356#362#0" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -46,16 +52,44 @@
                 <element signature="n#style#0;n#input#0;n#td#1;n#tr#3;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#td#1;n#tr#6;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1510162415584" expanded="false" signature="2713:2728" ph="..." />
-                <marker date="1510162415584" expanded="false" signature="2815:2827" ph="..." />
-                <marker date="1510162415584" expanded="false" signature="2951:2963" ph="..." />
-                <marker date="1510162415584" expanded="false" signature="3091:3103" ph="..." />
-                <marker date="1510162415584" expanded="false" signature="3243:3265" ph="..." />
-                <marker date="1510162415584" expanded="false" signature="3388:3400" ph="..." />
-                <marker date="1510162415584" expanded="false" signature="3520:3534" ph="..." />
-                <marker date="1510162415584" expanded="false" signature="3611:3623" ph="..." />
-                <marker date="1510162415584" expanded="false" signature="3748:3770" ph="..." />
+                <marker date="1510277084659" expanded="false" signature="2703:2718" ph="..." />
+                <marker date="1510277084659" expanded="false" signature="2805:2817" ph="..." />
+                <marker date="1510277084659" expanded="false" signature="2941:2953" ph="..." />
+                <marker date="1510277084659" expanded="false" signature="3081:3093" ph="..." />
+                <marker date="1510277084659" expanded="false" signature="3233:3255" ph="..." />
+                <marker date="1510277084659" expanded="false" signature="3378:3390" ph="..." />
+                <marker date="1510277084659" expanded="false" signature="3510:3524" ph="..." />
+                <marker date="1510277084659" expanded="false" signature="3601:3613" ph="..." />
+                <marker date="1510277084659" expanded="false" signature="3738:3760" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProcessAutomation.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProcessAutomation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="424" column="77" lean-forward="false" selection-start-line="424" selection-start-column="77" selection-end-line="424" selection-end-column="77" />
+              <folding>
+                <marker date="1510276651921" expanded="true" signature="13280:13297" ph="..." />
+                <marker date="1510276651921" expanded="true" signature="13451:13461" ph="..." />
+                <marker date="1510276651921" expanded="true" signature="14710:14721" ph="..." />
+                <marker date="1510276651921" expanded="true" signature="14710:14740" ph="..." />
+                <marker date="1510276651921" expanded="true" signature="14710:14747" ph="..." />
+                <marker date="1510276651921" expanded="true" signature="14873:14884" ph="..." />
+                <marker date="1510276651921" expanded="true" signature="14873:14910" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReviewAndRun.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReviewAndRun.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,25 +97,25 @@
       <file leaf-file-name="PatchTestCases.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PatchTestCases.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+            <state relative-caret-position="231">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <element signature="e#377#383#0" expanded="true" />
-                <element signature="e#383#389#0" expanded="true" />
-                <element signature="e#389#395#0" expanded="true" />
-                <element signature="e#545#551#0" expanded="true" />
-                <element signature="e#551#557#0" expanded="true" />
-                <element signature="e#557#563#0" expanded="true" />
-                <element signature="e#751#757#0" expanded="true" />
-                <element signature="e#757#763#0" expanded="true" />
-                <element signature="e#763#769#0" expanded="true" />
-                <element signature="e#1259#1265#0" expanded="true" />
-                <element signature="e#1265#1271#0" expanded="true" />
+                <element signature="e#367#373#0" expanded="true" />
+                <element signature="e#373#379#0" expanded="true" />
+                <element signature="e#379#385#0" expanded="true" />
+                <element signature="e#535#541#0" expanded="true" />
+                <element signature="e#541#547#0" expanded="true" />
+                <element signature="e#547#553#0" expanded="true" />
+                <element signature="e#741#747#0" expanded="true" />
+                <element signature="e#747#753#0" expanded="true" />
+                <element signature="e#753#759#0" expanded="true" />
+                <element signature="e#1249#1255#0" expanded="true" />
+                <element signature="e#1255#1261#0" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#1582#1588#0" expanded="true" />
-                <element signature="e#1588#1594#0" expanded="true" />
+                <element signature="e#1572#1578#0" expanded="true" />
+                <element signature="e#1578#1584#0" expanded="true" />
                 <element signature="n#style#0;n#button#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -96,16 +130,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReviewAndRun.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReviewAndRun.html">
+      <file leaf-file-name="QAProcessAutomation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QAProcessAutomation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="e#343#349#0" expanded="true" />
-                <element signature="e#349#355#0" expanded="true" />
-                <element signature="e#355#361#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="231">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,36 +143,18 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            <state relative-caret-position="84">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProcessAutomation.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProcessAutomation.js">
+      <file leaf-file-name="before_each_test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/before_each_test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="461" column="66" lean-forward="false" selection-start-line="461" selection-start-column="66" selection-end-line="461" selection-end-column="66" />
-              <folding>
-                <marker date="1510188825855" expanded="true" signature="13280:13297" ph="..." />
-                <marker date="1510188825855" expanded="true" signature="13451:13461" ph="..." />
-                <marker date="1510188825855" expanded="true" signature="14710:14721" ph="..." />
-                <marker date="1510188825855" expanded="true" signature="14710:14740" ph="..." />
-                <marker date="1510188825855" expanded="true" signature="14710:14747" ph="..." />
-                <marker date="1510188825855" expanded="true" signature="14873:14884" ph="..." />
-                <marker date="1510188825855" expanded="true" signature="14873:14910" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createNewSubmissionTest.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/createNewSubmissionTest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="74" column="23" lean-forward="false" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+            <state relative-caret-position="84">
+              <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -151,18 +163,28 @@
       <file leaf-file-name="import_sample_data_test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/import_sample_data_test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="45" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="42">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="title_test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/title_test.js">
+      <file leaf-file-name="create_new_submission_test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/create_new_submission_test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="42">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="after_each_test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/after_each_test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -173,24 +195,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="package_json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>files</find>
-      <find>back</find>
-      <find>buildbranch</find>
-      <find>loa</find>
-      <find>transactionSelector</find>
-      <find>replace</find>
-      <find>split</find>
-      <find>selectDeselectAllTestCases</find>
-      <find>testcaseslist</find>
-      <find>for</find>
       <find>select</find>
       <find>delRo</find>
       <find>fso</find>
@@ -210,7 +222,21 @@
       <find>aqua</find>
       <find>sho</find>
       <find>runco</find>
+      <find>option</find>
+      <find>transactionSelector</find>
+      <find>loadOptionsFromFile</find>
+      <find>change</find>
+      <find>policy change</find>
+      <find>policy chan</find>
+      <find>class=&quot;btn btn-primary&quot;</find>
+      <find>createTestCaseFile</find>
+      <find>createTestScriptFile</find>
+      <find>writeLine</find>
+      <find>writeTestListToPage</find>
     </findStrings>
+    <replaceStrings>
+      <replace>class=&quot;btn btn-primary btn-sm&quot;</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -225,22 +251,27 @@
       <list>
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/ConfirmAndRun.html" />
-        <option value="$PROJECT_DIR$/QAProcessAutomation.html" />
-        <option value="$PROJECT_DIR$/PatchConfiguration.html" />
-        <option value="$PROJECT_DIR$/PatchTestCases.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/ReviewAndRun.html" />
         <option value="$PROJECT_DIR$/test_files/create_submission_test.js" />
         <option value="$PROJECT_DIR$/automated_components/selenium_components/createNewAccount.js" />
         <option value="$PROJECT_DIR$/automated_components/selenium_components/issuePolicyChangeTest.js" />
         <option value="$PROJECT_DIR$/automated_components/selenium_components/cancelPolicyTest.js" />
-        <option value="$PROJECT_DIR$/ProcessAutomation.js" />
         <option value="$PROJECT_DIR$/automated_components/create_submission_test.js" />
         <option value="$PROJECT_DIR$/automated_components/selenium_components/createNewAccountTest.js" />
         <option value="$PROJECT_DIR$/automated_components/selenium_components/x.html" />
         <option value="$PROJECT_DIR$/automated_components/selenium_components/package.json" />
-        <option value="$PROJECT_DIR$/automated_components/selenium_components/import_sample_data_test.js" />
+        <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/automated_components/selenium_components/createNewSubmissionTest.js" />
+        <option value="$PROJECT_DIR$/automated_components/selenium_components/title_test.js" />
+        <option value="$PROJECT_DIR$/automated_components/selenium_components/after_each_test.js" />
+        <option value="$PROJECT_DIR$/automated_components/selenium_components/before_each_test.js" />
+        <option value="$PROJECT_DIR$/automated_components/selenium_components/import_sample_data_test.js" />
+        <option value="$PROJECT_DIR$/automated_components/selenium_components/create_new_submission_test.js" />
+        <option value="$PROJECT_DIR$/ProcessAutomation.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/QAProcessAutomation.html" />
+        <option value="$PROJECT_DIR$/PatchConfiguration.html" />
+        <option value="$PROJECT_DIR$/PatchTestCases.html" />
+        <option value="$PROJECT_DIR$/ReviewAndRun.html" />
       </list>
     </option>
   </component>
@@ -275,7 +306,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,11 +325,16 @@
               <item name="automated_components" type="462c0819:PsiDirectoryNode" />
               <item name="selenium_components" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="automation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -308,6 +344,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -326,11 +363,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.createNewSubmissionTest.js">
+  <component name="RunManager" selected="JavaScript Debug.QAProcessAutomation.html">
+    <configuration name="PatchAcceptanceTesting.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/automation_project/PatchAcceptanceTesting.html" />
     <configuration name="PatchConfiguration.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/automation_project/PatchConfiguration.html" />
     <configuration name="ProcessAutomation.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="ProcessAutomation.js" working-dir="$PROJECT_DIR$" />
     <configuration name="QAProcessAutomation.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/automation_project/QAProcessAutomation.html" />
-    <configuration name="RunServer.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="RunServer.js" working-dir="$PROJECT_DIR$" />
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -757,17 +794,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.PatchConfiguration.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.QAProcessAutomation.html" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.RunServer.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.ProcessAutomation.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.createNewSubmissionTest.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.ProcessAutomation.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.createNewSubmissionTest.js" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.PatchAcceptanceTesting.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.createNewSubmissionTest.js" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.QAProcessAutomation.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.PatchConfiguration.html" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.ProcessAutomation.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.RunServer.js" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.QAProcessAutomation.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.PatchAcceptanceTesting.html" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.createNewSubmissionTest.js" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.PatchConfiguration.html" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.ProcessAutomation.js" />
       </list>
     </recent_temporary>
   </component>
@@ -783,22 +820,23 @@
       <updated>1509817507585</updated>
       <workItem from="1509817513926" duration="32000" />
       <workItem from="1509817876213" duration="71000" />
-      <workItem from="1509819142005" duration="75386000" />
+      <workItem from="1509819142005" duration="75979000" />
+      <workItem from="1510248199520" duration="13615000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75489000" />
+    <option name="totallyTimeSpent" value="89697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1911" y="-9" width="1938" height="1218" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.184375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20664206" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32841328" sideWeight="0.49583334" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20664206" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32841328" sideWeight="0.50625" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32841328" sideWeight="0.49375" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37086093" sideWeight="0.49609375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -831,6 +869,128 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/PatchConfiguration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="e#344#350#0" expanded="true" />
+            <element signature="e#350#356#0" expanded="true" />
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#3;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#6;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1510277084659" expanded="false" signature="2703:2718" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="2805:2817" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="2941:2953" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="3081:3093" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="3233:3255" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="3378:3390" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="3510:3524" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="3601:3613" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="3738:3760" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatchTestCases.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+          <folding>
+            <element signature="e#367#373#0" expanded="true" />
+            <element signature="e#373#379#0" expanded="true" />
+            <element signature="e#379#385#0" expanded="true" />
+            <element signature="e#535#541#0" expanded="true" />
+            <element signature="e#541#547#0" expanded="true" />
+            <element signature="e#547#553#0" expanded="true" />
+            <element signature="e#741#747#0" expanded="true" />
+            <element signature="e#747#753#0" expanded="true" />
+            <element signature="e#753#759#0" expanded="true" />
+            <element signature="e#1249#1255#0" expanded="true" />
+            <element signature="e#1255#1261#0" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1572#1578#0" expanded="true" />
+            <element signature="e#1578#1584#0" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#col#2;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReviewAndRun.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#333#339#0" expanded="false" />
+            <element signature="e#339#345#0" expanded="false" />
+            <element signature="e#345#351#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProcessAutomation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9681">
+          <caret line="461" column="66" lean-forward="false" selection-start-line="461" selection-start-column="66" selection-end-line="461" selection-end-column="66" />
+          <folding>
+            <marker date="1510276651921" expanded="true" signature="13280:13297" ph="..." />
+            <marker date="1510276651921" expanded="true" signature="13451:13461" ph="..." />
+            <marker date="1510276651921" expanded="true" signature="14710:14721" ph="..." />
+            <marker date="1510276651921" expanded="true" signature="14710:14740" ph="..." />
+            <marker date="1510276651921" expanded="true" signature="14710:14747" ph="..." />
+            <marker date="1510276651921" expanded="true" signature="14873:14884" ph="..." />
+            <marker date="1510276651921" expanded="true" signature="14873:14910" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/import_sample_data_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/title_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/createNewSubmissionTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1554">
+          <caret line="74" column="23" lean-forward="false" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RunServer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -871,14 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PatchAcceptanceTesting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2198">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RunServer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -891,160 +1043,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QAProcessAutomation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/create_submission_test.js" />
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/x.html" />
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/package.json" />
     <entry file="file://$PROJECT_DIR$/Original.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="29" />
+        <state relative-caret-position="201">
+          <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReviewAndRun.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#343#349#0" expanded="true" />
-            <element signature="e#349#355#0" expanded="true" />
-            <element signature="e#355#361#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PatchConfiguration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-675">
-          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding>
-            <element signature="e#354#360#0" expanded="true" />
-            <element signature="e#360#366#0" expanded="true" />
-            <element signature="e#366#372#0" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#3;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#6;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1510162415584" expanded="false" signature="2713:2728" ph="..." />
-            <marker date="1510162415584" expanded="false" signature="2815:2827" ph="..." />
-            <marker date="1510162415584" expanded="false" signature="2951:2963" ph="..." />
-            <marker date="1510162415584" expanded="false" signature="3091:3103" ph="..." />
-            <marker date="1510162415584" expanded="false" signature="3243:3265" ph="..." />
-            <marker date="1510162415584" expanded="false" signature="3388:3400" ph="..." />
-            <marker date="1510162415584" expanded="false" signature="3520:3534" ph="..." />
-            <marker date="1510162415584" expanded="false" signature="3611:3623" ph="..." />
-            <marker date="1510162415584" expanded="false" signature="3748:3770" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automated_components/create_submission_test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PatchTestCases.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
-          <folding>
-            <element signature="e#377#383#0" expanded="true" />
-            <element signature="e#383#389#0" expanded="true" />
-            <element signature="e#389#395#0" expanded="true" />
-            <element signature="e#545#551#0" expanded="true" />
-            <element signature="e#551#557#0" expanded="true" />
-            <element signature="e#557#563#0" expanded="true" />
-            <element signature="e#751#757#0" expanded="true" />
-            <element signature="e#757#763#0" expanded="true" />
-            <element signature="e#763#769#0" expanded="true" />
-            <element signature="e#1259#1265#0" expanded="true" />
-            <element signature="e#1265#1271#0" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1582#1588#0" expanded="true" />
-            <element signature="e#1588#1594#0" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#col#2;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProcessAutomation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="461" column="66" lean-forward="false" selection-start-line="461" selection-start-column="66" selection-end-line="461" selection-end-column="66" />
-          <folding>
-            <marker date="1510188825855" expanded="true" signature="13280:13297" ph="..." />
-            <marker date="1510188825855" expanded="true" signature="13451:13461" ph="..." />
-            <marker date="1510188825855" expanded="true" signature="14710:14721" ph="..." />
-            <marker date="1510188825855" expanded="true" signature="14710:14740" ph="..." />
-            <marker date="1510188825855" expanded="true" signature="14710:14747" ph="..." />
-            <marker date="1510188825855" expanded="true" signature="14873:14884" ph="..." />
-            <marker date="1510188825855" expanded="true" signature="14873:14910" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/createNewAccountTest.js">
+    <entry file="file://$PROJECT_DIR$/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/issuePAPolicyChangeTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/x.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1059,24 +1075,174 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/title_test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/import_sample_data_test.js">
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/issuePAPolicyChangeTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/createNewAccountTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/createNewSubmissionTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="74" column="23" lean-forward="false" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="true" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatchAcceptanceTesting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/before_each_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/create_new_submission_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/after_each_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/import_sample_data_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProcessAutomation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="424" column="77" lean-forward="false" selection-start-line="424" selection-start-column="77" selection-end-line="424" selection-end-column="77" />
+          <folding>
+            <marker date="1510276651921" expanded="true" signature="13280:13297" ph="..." />
+            <marker date="1510276651921" expanded="true" signature="13451:13461" ph="..." />
+            <marker date="1510276651921" expanded="true" signature="14710:14721" ph="..." />
+            <marker date="1510276651921" expanded="true" signature="14710:14740" ph="..." />
+            <marker date="1510276651921" expanded="true" signature="14710:14747" ph="..." />
+            <marker date="1510276651921" expanded="true" signature="14873:14884" ph="..." />
+            <marker date="1510276651921" expanded="true" signature="14873:14910" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QAProcessAutomation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatchConfiguration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#344#350#0" expanded="true" />
+            <element signature="e#350#356#0" expanded="true" />
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#3;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#6;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1510277084659" expanded="false" signature="2703:2718" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="2805:2817" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="2941:2953" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="3081:3093" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="3233:3255" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="3378:3390" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="3510:3524" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="3601:3613" ph="..." />
+            <marker date="1510277084659" expanded="false" signature="3738:3760" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatchTestCases.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#367#373#0" expanded="true" />
+            <element signature="e#373#379#0" expanded="true" />
+            <element signature="e#379#385#0" expanded="true" />
+            <element signature="e#535#541#0" expanded="true" />
+            <element signature="e#541#547#0" expanded="true" />
+            <element signature="e#547#553#0" expanded="true" />
+            <element signature="e#741#747#0" expanded="true" />
+            <element signature="e#747#753#0" expanded="true" />
+            <element signature="e#753#759#0" expanded="true" />
+            <element signature="e#1249#1255#0" expanded="true" />
+            <element signature="e#1255#1261#0" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1572#1578#0" expanded="true" />
+            <element signature="e#1578#1584#0" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#col#2;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReviewAndRun.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body onload="writeTestListToPage()">
-<hr>
 <h1>Patch Test Cases</h1>
-<hr>
 <div id="buttonSet">
     <button class="button leftpaneButton" onclick="window.location.href='QAProcessAutomation.html'" title="Home">Home&nbsp;&nbsp;&nbsp;<img src="resources/home-icon.png" height="15" width="15"/></button>
     <br>
@@ -51,13 +49,7 @@
     <br><br><br>
 </div>
 <div id="transactionSelector" style="display:none">
-    <select id="select:" style="width:100%" onChange="populateTransactionParameters(this.id)">
-        <option>Select Transaction Type</option>
-        <option>Create New Account</option>
-        <option>Policy Issuance</option>
-        <option>Policy Change</option>
-        <option>Policy Cancellation</option>
-    </select>
+    <select id="select:" style="width:100%" onChange="populateTransactionParameters(this.id)"></select>
 </div>
 <script type="text/javascript" src='ProcessAutomation.js'></script>
 </body>

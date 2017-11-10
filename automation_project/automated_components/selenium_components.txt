@@ -1,0 +1,6 @@
+Transanction Type:TestFile:TestInputParams:TestOutputParams:
+Import Sample Data:import_sample_data_test.js::
+Create New Account:create_new_account_test.js:AccountNumber:
+Create New Submission:create_new_submission_test.js:LOB:PolicyNumber:
+Issue PA Policy Change:issue_pa_policy_change_test.js:PolicyNumber:SubmissionNumber:
+Cancel Policy:cancel_policy_test.js:PolicyNumber:

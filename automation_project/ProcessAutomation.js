@@ -327,6 +327,7 @@ function addRemoveTransactionRow(id, delRow, uniqueTableId) {
         row.insertCell(2).innerHTML = "<input style='width:98.5%;background-color: #9e9e9e' id='input:" + uniqueKey + ":" + uniqueTableId + "' readonly></input>";
         row.insertCell(3).innerHTML = "<input style='width:98.5%;background-color: #9e9e9e' id='output:" + uniqueKey + ":" + uniqueTableId + "' readonly></input>";
         row.insertCell(4).innerHTML = "<button id='remove' onClick='addRemoveTransactionRow(this.id, \"" + x + "\", \"" + uniqueTableId + "\")'>-</button>"
+		loadOptionsFromFile("select:" + uniqueKey + ":" + uniqueTableId, "C:\\vmittal\\Project\\SelfLearning\\GitHub\\automation_project\\automated_components\\selenium_components.txt", "Transanction Type")
     }
     else if(id == "remove")
     {
@@ -349,11 +350,11 @@ function populateTransactionParameters(id) {
         document.getElementById(inputParamId).value = "";
         document.getElementById(outputParamId).value = "Account#"
     }
-	else if(selection == "Policy Issuance"){
+	else if(selection == "Create New Submission"){
     	document.getElementById(inputParamId).value = "Account#";
         document.getElementById(outputParamId).value = "Policy#"
 	}
-	else if(selection == "Policy Change"){
+	else if(selection == "Issue PA Policy Change"){
         document.getElementById(inputParamId).value = "Policy*#; AddDays*#"
         document.getElementById(outputParamId).value = "Submission#"
         if(x!=2){
@@ -363,7 +364,7 @@ function populateTransactionParameters(id) {
         }
 	}
 
-	if(x!=2 && selection !="Policy Change"){document.getElementById(inputParamId).value = "";}
+	if(x!=2 && selection !="Issue PA Policy Change"){document.getElementById(inputParamId).value = "";}
 }
 function addTestToList() {
     document.testFlow = "";
@@ -413,6 +414,7 @@ function writeTestListToPage() {
     if (fso.fileExists("C:\\TestFile.csv")) {
         var existingFile = fso.OpenTextFile("C:\\TestFile.csv", 1, false);
         var table = document.getElementById("testCasesList");
+        var r = 1;
         while (!existingFile.AtEndOfStream) {
             var lineContent = existingFile.ReadLine();
             var splitLineContent = lineContent.split(",");
@@ -420,10 +422,12 @@ function writeTestListToPage() {
             row.insertCell(0).innerHTML = splitLineContent[0];
             row.insertCell(1).innerHTML = splitLineContent[1];
             row.insertCell(2).innerHTML = "<button id='remove' onClick='addRemoveTransactionRow(this.id, \"" + (document.getElementById("testCasesList").rows.length - 1) + "\", \"testCasesList\")'>-</button>"
+            createTestScriptFile("TestCase-" + r + ".js", splitLineContent[1]);
+            r++;
         }
         existingFile.close();
     }
-    fso.close();
+    fso.close;
 }
 function showTestList() {
 	if (document.getElementById("showTestList").innerHTML == "Show Test List"){
@@ -463,22 +467,89 @@ function writeTestListToFile() {
 function titleVersionCheck(){
     var wsh = new ActiveXObject("WScript.Shell");
     var output = wsh.exec("node C:\\vmittal\\Self_Learning\\Demo-Project\\automation_project\\test_files\\title_test.js");
-    wsh.close;
+    wsh.close();
     var toPrint = output.StdOut.ReadAll();
     document.getElementById("spnTitleVersionDetail").innerText = 'Title:    ' + toPrint;
 }
 function createSubmissionTest(){
     var wsh = new ActiveXObject("WScript.Shell");
     var output = wsh.exec("node C:\\vmittal\\Self_Learning\\Demo-Project\\automation_project\\test_files\\create_submission_test.js");
-    wsh.close;
+    wsh.close();
     var toPrint = output.StdOut.ReadAll();
     document.getElementById("spnPolicyNumber").innerText = 'Policy number:   ' + toPrint;
 }
 function importSampleDataTest(){
     var wsh = new ActiveXObject("WScript.Shell");
     var output = wsh.exec("node C:\\vmittal\\Self_Learning\\Demo-Project\\automation_project\\test_files\\import_sample_data_test.js");
-    wsh.close;
+    wsh.close();
     var toPrint = output.StdOut.ReadAll();
     alert(toPrint);
     document.getElementById("spnImportSampleData").innerText = 'Import Status:   ' + toPrint;
+}
+function loadOptionsFromFile(id, filePath, colLabel){
+    var selectList = document.getElementById(id);
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var fileToRead = fso.OpenTextFile(filePath, 1, false);
+    while (!fileToRead.AtEndOfStream) {
+        var tempLine = fileToRead.ReadLine();
+        var splitLine = tempLine.split(":");
+        for (var i=0; i < splitLine.length; i++){
+            if(splitLine[i] == colLabel){
+                var colIndex = i;
+                break;
+            }
+        }
+        var option = document.createElement("option");
+        option.text = splitLine[colIndex];
+        selectList.add(option);
+    }
+    fileToRead.close();
+    fso.close;
+
+}
+function createTestScriptFile(testScriptFileName, testFlow){
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var testScriptFileMerged = "C:\\vmittal\\Project\\SelfLearning\\GitHub\\automation_project\\automated_components\\testCases\\" + testScriptFileName;
+    if(fso.fileExists(testScriptFileMerged)){fso.DeleteFile(testScriptFileMerged);}
+
+    var newFile = fso.OpenTextFile(testScriptFileMerged, 8, true);
+
+    var scriptFile = fso.OpenTextFile("C:\\vmittal\\Project\\SelfLearning\\GitHub\\automation_project\\automated_components\\selenium_components\\before_each_test.js", 1, false);
+    var fileCopyContent = scriptFile.ReadAll();
+    scriptFile.close();
+    newFile.writeLine(fileCopyContent);
+
+    var splitTestFlow = testFlow.split(" --&gt; ");
+    for(var i=0; i < splitTestFlow.length; i++){
+    	if (splitTestFlow[i] != "") {
+            var testScript = getScriptFileName(splitTestFlow[i]);
+            var scriptFile = fso.OpenTextFile("C:\\vmittal\\Project\\SelfLearning\\GitHub\\automation_project\\automated_components\\selenium_components\\" + testScript, 1, false);
+            var fileCopyContent = scriptFile.ReadAll();
+            scriptFile.close();
+            newFile.writeLine(fileCopyContent);
+        }
+	}
+
+    var scriptFile = fso.OpenTextFile("C:\\vmittal\\Project\\SelfLearning\\GitHub\\automation_project\\automated_components\\selenium_components\\after_each_test.js", 1, false);
+    var fileCopyContent = scriptFile.ReadAll();
+    scriptFile.close();
+    newFile.writeLine(fileCopyContent);
+    newFile.close();
+    fso.close;
+
+}
+function getScriptFileName(transactionType){
+    var ofs = new ActiveXObject("Scripting.FileSystemObject");
+    var fileToRead = ofs.OpenTextFile("C:\\vmittal\\Project\\SelfLearning\\GitHub\\automation_project\\automated_components\\selenium_components.txt", 1, false);
+    while (!fileToRead.AtEndOfStream) {
+        var tempLine = fileToRead.ReadLine();
+        var splitLine = tempLine.split(":");
+        if (transactionType.indexOf(splitLine[0]) >= 0){
+        	var scriptName=  splitLine[1];
+        	return scriptName;
+        	break;
+		}
+    }
+    fileToRead.close();
+    ofs.close;
 }
