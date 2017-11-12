@@ -1,12 +1,9 @@
-driver.sleep(2000).then(
-    function() {
-        driver.findElement(By.xpath('//*[@id="QuickJump-inputEl"]')).sendKeys('Run Policy wIssuance PA');
-        driver.findElement(By.xpath('//*[@id="QuickJump-inputEl"]')).sendKeys(webdriver.Key.ENTER);
-        driver.sleep(20000);
-        driver.findElement(By.xpath('//*[@id="PolicyFile_Summary:Policy_SummaryScreen:Policy_Summary_PolicyDV:PolicyNumber-inputEl"]')).getAttribute('innerHTML').then(function(policy){
-            policyNumber1 = policy;
-            console.log(policy);
-        });
-
+test.it('Create New Submission', function () {
+    driver.findElement(By.xpath('//*[@id="QuickJump-inputEl"]')).sendKeys('Run Policy wIssuance '+ lob);
+    driver.findElement(By.xpath('//*[@id="QuickJump-inputEl"]')).sendKeys(webdriver.Key.ENTER);
+    driver.sleep(10000);
+    driver.findElement(By.xpath('//*[@id="PolicyFile_Summary:Policy_SummaryScreen:Policy_Summary_PolicyDV:PolicyNumber-inputEl"]')).getAttribute('innerHTML').then(function (policy) {
+        var policyNumber1 = policy;
+        assert.notEqual(policyNumber1, "1234", "Policy Verfication msg");
     });
-
+});

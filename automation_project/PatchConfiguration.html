@@ -3,65 +3,79 @@
 <head>
 <meta charset="utf-8"/>
   <title>
-    Patch Build Configuration
+    Configuration
   </title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body onload="loadConfiguration()">
-<h1>Patch Build Configuration</h1>
-<button class="button leftpaneButton" onclick="window.location.href='QAProcessAutomation.html'" title="Home">Home&nbsp;&nbsp;&nbsp;<img src="resources/home-icon.png" height="15" width="15"/></button>
-<br>
-<button class="button leftpaneButton" onclick="window.location.href='PatchTestCases.html'" title="PatchTestCases">Next >></button>
-<br>
-<button class="button leftpaneButton" onclick="window.location.href='QAProcessAutomation.html'" title="QAProcessAutomation"><< Back</button>
-<table align="center" style="width:60%;" id="prerequisiteTable">
-<tr style="background-color: lightsalmon">
-    <th>Config Parameter</th>
-    <th>Config Value</th> 
-  </tr>
-  <tr>
-	<td style="width:15%">Test Directory:</td>
-	<td><input type="text" style="width:100%;text-align: left" id="testDirectory"/></td>
-  </tr>
-  <tr>
-	<td style="width:15%">Build Branch</td>
-	<td>
-		<select style="width:100%" id="upgradeBuildBranch" onChange="hidePatchOption()">
-			<option value="diamond">Diamond(7.x)</option>
-			<option value="emerald">Emerald(8.x)</option>
-			<option value="ferrite">Ferrite(9.x)</option>
-            <option value="granite">Granite(10.x)</option>
-		</select>
-	</td>	  
-  </tr>
-  <tr>
-  <td>Build Zip Path:</td>
-  <td><input style="width:100%" type="file" accept=".zip" id="newBuildZipPath"></td>
-  </tr>
-  <tr id="patchBuildDetailsRow">
-  <td>Patch Build Zip Path:</td>
-  <td><input style="width:100%" type="file" accept=".zip" id="patchBuildZipPath"></td>
-  </tr>
-  <tr>
-    <td>Database Server:</td>
-	<td>
-		<select style="width:100%" id="upgradeDBServer">
-			<option value="REDSKULL\\SQLSERVER2014">REDSKULL\\SQLSERVER2014</option>
-			<option value="devdb3\\sqlserver2008r2">devdb3\\sqlserver2008r2</option>
-			<option value="REDSKULL\\SQLSERVER2012">REDSKULL\\SQLSERVER2012</option>
-			<option value="devdb4\\SQLSERVER2016">devdb4\\SQLSERVER2016</option>
-			<option value="REDSKULL\\SQLSERVER2008R2">REDSKULL\\SQLSERVER2008R2</option>
-		</select>
-	</td>	  
-  </tr>
-  <tr>
-    <td>Database Name:</td>
-	<td><input style="width:100%;text-align: left" type="text" id="newDbName"></td>
-  </tr>
+<h1>Select Configuration:</h1>
+<table style="border: none;box-shadow: none">
+    <tr  style="border: none">
+        <td valign="top" style="border: none">
+            <br>
+            <div id="buttonSet">
+                <button class="button leftpaneButton" onclick="window.location.href='QAProcessAutomation.html'" title="Home">Home&nbsp;&nbsp;&nbsp;<img src="resources/home-icon.png" height="15" width="15"/></button>
+                <br>
+                <button class="button leftpaneButton" onclick="window.location.href='PatchConfiguration.html'" title="Configuration">Configuration</button>
+                <br>
+                <button class="button leftpaneButton" onclick="window.location.href='PatchTestCases.html'" title="Test Cases">Test Cases</button>
+                <br>
+                <button class="button leftpaneButton" onclick="window.location.href='ReviewAndRun.html'" title="ReviewAndRun">Review and Run</button>
+            </div>
+        </td>
+        <td style="width: 90%;border: none;">
+            <br><br>
+            <table align="center" style="width:60%;" id="prerequisiteTable">
+                <tr style="background-color: lightsalmon">
+                    <th>Config Parameter</th>
+                    <th>Config Value</th>
+                </tr>
+                <tr>
+                    <td style="width:15%">Test Directory:</td>
+                    <td><input type="text" style="width:100%;text-align: left" id="testDirectory"/></td>
+                </tr>
+                <tr>
+                    <td style="width:15%">Build Branch</td>
+                    <td>
+                        <select style="width:100%" id="upgradeBuildBranch" onChange="hidePatchOption()">
+                            <option value="diamond">Diamond(7.x)</option>
+                            <option value="emerald">Emerald(8.x)</option>
+                            <option value="ferrite">Ferrite(9.x)</option>
+                            <option value="granite">Granite(10.x)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Build Zip Path:</td>
+                    <td><input style="width:100%" type="file" accept=".zip" id="newBuildZipPath"></td>
+                </tr>
+                <tr id="patchBuildDetailsRow">
+                    <td>Patch Build Zip Path:</td>
+                    <td><input style="width:100%" type="file" accept=".zip" id="patchBuildZipPath"></td>
+                </tr>
+                <tr>
+                    <td>Database Server:</td>
+                    <td>
+                        <select style="width:100%" id="upgradeDBServer">
+                            <option value="REDSKULL\\SQLSERVER2014">REDSKULL\\SQLSERVER2014</option>
+                            <option value="devdb3\\sqlserver2008r2">devdb3\\sqlserver2008r2</option>
+                            <option value="REDSKULL\\SQLSERVER2012">REDSKULL\\SQLSERVER2012</option>
+                            <option value="devdb4\\SQLSERVER2016">devdb4\\SQLSERVER2016</option>
+                            <option value="REDSKULL\\SQLSERVER2008R2">REDSKULL\\SQLSERVER2008R2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Database Name:</td>
+                    <td><input style="width:100%;text-align: left" type="text" id="newDbName"></td>
+                </tr>
+            </table>
+            <br>
+            <button style="margin-left: 900px" id="editConfiguration" class="submitButton" onclick="editConfiguration()">Edit</button>
+            <br><br>
+        </td>
+    </tr>
 </table>
-<br>
-<button style="margin-left: 900px" class="submitButton" onclick="createConfigurationFile()">Save</button>
-<br><br>
 <!--<button id="runUpgradeConfigButton" style="background-color:yellow;margin-left:auto;margin-right:auto;display:block" type="button" onClick="runConfig(this.id)">Configure and setup build</button>
 <br><br>-->
 <br><br>

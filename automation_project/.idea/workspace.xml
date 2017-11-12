@@ -7,6 +7,143 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/automated_components/selenium_components/createNewAccountTest.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/automated_components/selenium_components/createNewSubmissionTest.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/automated_components/selenium_components/issuePAPolicyChangeTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/automated_components/testCases/TestCase-1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/automated_components/testCases/TestCase-2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/assert/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/assert/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/assert/.zuul.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/assert/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/assert/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/assert/assert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/assert/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/assert/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/apply.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/applyEach.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/applyEachSeries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/asyncify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/auto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/autoInject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/cargo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/compose.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/concat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/concatLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/concatSeries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/constant.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/detect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/detectLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/detectSeries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/dir.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/dist/async.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/dist/async.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/doDuring.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/doUntil.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/doWhilst.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/during.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/each.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/eachLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/eachOf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/eachOfLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/eachOfSeries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/eachSeries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/ensureAsync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/every.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/everyLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/everySeries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/filterLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/filterSeries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/forever.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/groupBy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/groupByLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/groupBySeries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/DoublyLinkedList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/applyEach.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/breakLoop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/consoleFunc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/createTester.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/doLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/doParallel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/doParallelLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/eachOfLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/findGetResult.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/getIterator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/initialParams.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/iterator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/notId.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/once.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/onlyOnce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/parallel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/queue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/reject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/setImmediate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/slice.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/withoutIndex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/internal/wrapAsync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/log.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/mapLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/mapSeries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/mapValues.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/mapValuesLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/mapValuesSeries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/memoize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/nextTick.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/parallel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/parallelLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/priorityQueue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/queue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/race.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/reduce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/reduceRight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/reflect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/reflectAll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/reject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/rejectLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/rejectSeries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/retry.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/retryable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/seq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/series.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/setImmediate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/some.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/someLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/someSeries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/sortBy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/timeout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/times.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/timesLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/timesSeries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/transform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/tryEach.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/unmemoize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/until.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/waterfall.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/async/whilst.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/.zuul.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/support/isBuffer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/support/isBufferBrowser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/test/browser/inspect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/test/browser/is.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/test/node/debug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/test/node/format.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/test/node/inspect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/test/node/log.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/test/node/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/util/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/create_submission_test.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/import_sample_data_test.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/title_test.js" afterPath="" />
@@ -16,7 +153,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProcessAutomation.js" afterPath="$PROJECT_DIR$/ProcessAutomation.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QAProcessAutomation.html" afterPath="$PROJECT_DIR$/QAProcessAutomation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReviewAndRun.html" afterPath="$PROJECT_DIR$/ReviewAndRun.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/automated_components/selenium_components/import_sample_data_test.js" afterPath="$PROJECT_DIR$/automated_components/selenium_components/import_sample_data_test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/automated_components/selenium_components/after_each_test.js" afterPath="$PROJECT_DIR$/automated_components/selenium_components/after_each_test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/automated_components/selenium_components/before_each_test.js" afterPath="$PROJECT_DIR$/automated_components/selenium_components/before_each_test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/automated_components/selenium_components/create_new_account_test.js" afterPath="$PROJECT_DIR$/automated_components/selenium_components/create_new_account_test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/automated_components/selenium_components/create_new_submission_test.js" afterPath="$PROJECT_DIR$/automated_components/selenium_components/create_new_submission_test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
     </list>
     <ignored path="automation_project.iws" />
@@ -36,115 +176,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="PatchConfiguration.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PatchConfiguration.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="e#344#350#0" expanded="true" />
-                <element signature="e#350#356#0" expanded="true" />
-                <element signature="e#356#362#0" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#td#1;n#tr#3;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#td#1;n#tr#6;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1510277084659" expanded="false" signature="2703:2718" ph="..." />
-                <marker date="1510277084659" expanded="false" signature="2805:2817" ph="..." />
-                <marker date="1510277084659" expanded="false" signature="2941:2953" ph="..." />
-                <marker date="1510277084659" expanded="false" signature="3081:3093" ph="..." />
-                <marker date="1510277084659" expanded="false" signature="3233:3255" ph="..." />
-                <marker date="1510277084659" expanded="false" signature="3378:3390" ph="..." />
-                <marker date="1510277084659" expanded="false" signature="3510:3524" ph="..." />
-                <marker date="1510277084659" expanded="false" signature="3601:3613" ph="..." />
-                <marker date="1510277084659" expanded="false" signature="3738:3760" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProcessAutomation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProcessAutomation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="424" column="77" lean-forward="false" selection-start-line="424" selection-start-column="77" selection-end-line="424" selection-end-column="77" />
+            <state relative-caret-position="126">
+              <caret line="509" column="68" lean-forward="false" selection-start-line="509" selection-start-column="68" selection-end-line="509" selection-end-column="68" />
               <folding>
-                <marker date="1510276651921" expanded="true" signature="13280:13297" ph="..." />
-                <marker date="1510276651921" expanded="true" signature="13451:13461" ph="..." />
-                <marker date="1510276651921" expanded="true" signature="14710:14721" ph="..." />
-                <marker date="1510276651921" expanded="true" signature="14710:14740" ph="..." />
-                <marker date="1510276651921" expanded="true" signature="14710:14747" ph="..." />
-                <marker date="1510276651921" expanded="true" signature="14873:14884" ph="..." />
-                <marker date="1510276651921" expanded="true" signature="14873:14910" ph="..." />
+                <marker date="1510470372708" expanded="true" signature="13502:13519" ph="..." />
+                <marker date="1510470372708" expanded="true" signature="13673:13683" ph="..." />
+                <marker date="1510470372708" expanded="true" signature="14932:14943" ph="..." />
+                <marker date="1510470372708" expanded="true" signature="14932:14962" ph="..." />
+                <marker date="1510470372708" expanded="true" signature="14932:14969" ph="..." />
+                <marker date="1510470372708" expanded="true" signature="15095:15106" ph="..." />
+                <marker date="1510470372708" expanded="true" signature="15095:15132" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReviewAndRun.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ReviewAndRun.html">
+      <file leaf-file-name="TestCase-1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/TestCase-1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PatchTestCases.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PatchTestCases.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="e#367#373#0" expanded="true" />
-                <element signature="e#373#379#0" expanded="true" />
-                <element signature="e#379#385#0" expanded="true" />
-                <element signature="e#535#541#0" expanded="true" />
-                <element signature="e#541#547#0" expanded="true" />
-                <element signature="e#547#553#0" expanded="true" />
-                <element signature="e#741#747#0" expanded="true" />
-                <element signature="e#747#753#0" expanded="true" />
-                <element signature="e#753#759#0" expanded="true" />
-                <element signature="e#1249#1255#0" expanded="true" />
-                <element signature="e#1255#1261#0" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#1572#1578#0" expanded="true" />
-                <element signature="e#1578#1584#0" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#col#2;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QAProcessAutomation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QAProcessAutomation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="452">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -153,18 +207,96 @@
       <file leaf-file-name="before_each_test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/before_each_test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="import_sample_data_test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/import_sample_data_test.js">
+      <file leaf-file-name="ReviewAndRun.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReviewAndRun.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="116">
+              <caret line="64" column="56" lean-forward="false" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#540#546#0" expanded="true" />
+                <element signature="e#546#552#0" expanded="true" />
+                <element signature="e#552#558#0" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#td#1;n#tr#1;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#b#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3177#3183#0" expanded="true" />
+                <element signature="e#3183#3189#0" expanded="true" />
+                <element signature="e#3277#3283#1" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#col#2;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PatchTestCases.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PatchTestCases.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="57" column="6" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="57" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#589#595#0" expanded="true" />
+                <element signature="e#595#601#0" expanded="true" />
+                <element signature="e#601#607#0" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#1356#1362#0" expanded="true" />
+                <element signature="e#1362#1368#0" expanded="true" />
+                <element signature="e#1368#1374#0" expanded="true" />
+                <element signature="e#1437#1443#0" expanded="true" />
+                <element signature="e#1443#1449#0" expanded="true" />
+                <element signature="e#1545#1551#0" expanded="true" />
+                <element signature="e#1551#1557#0" expanded="true" />
+                <element signature="e#1557#1563#0" expanded="true" />
+                <element signature="e#1630#1636#0" expanded="true" />
+                <element signature="e#1636#1642#0" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#3;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#2162#2168#0" expanded="true" />
+                <element signature="e#2168#2174#0" expanded="true" />
+                <element signature="n#style#0;n#button#4;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#col#2;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_new_account_test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/create_new_account_test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -173,18 +305,18 @@
       <file leaf-file-name="create_new_submission_test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/create_new_submission_test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="21">
+              <caret line="1" column="103" lean-forward="false" selection-start-line="1" selection-start-column="103" selection-end-line="1" selection-end-column="103" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="after_each_test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/after_each_test.js">
+      <file leaf-file-name="QAProcessAutomation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QAProcessAutomation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -203,27 +335,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>select</find>
-      <find>delRo</find>
-      <find>fso</find>
-      <find>configuration.cs</find>
-      <find>opentext</find>
-      <find>inser</find>
-      <find>insertRow</find>
-      <find>testfile</find>
-      <find>buttonset</find>
-      <find>naviga</find>
-      <find>body</find>
-      <find>Back</find>
-      <find>&lt;col</find>
-      <find>baseConfigColumn</find>
-      <find>fileexis</find>
-      <find>deletero</find>
-      <find>aqua</find>
-      <find>sho</find>
-      <find>runco</find>
-      <find>option</find>
-      <find>transactionSelector</find>
       <find>loadOptionsFromFile</find>
       <find>change</find>
       <find>policy change</find>
@@ -233,6 +344,27 @@
       <find>createTestScriptFile</find>
       <find>writeLine</find>
       <find>writeTestListToPage</find>
+      <find>cancel</find>
+      <find>addToListCancelButton</find>
+      <find>bu</find>
+      <find>addtest</find>
+      <find>submi</find>
+      <find>edit</find>
+      <find>runconfig</find>
+      <find>loadCon</find>
+      <find>testFlow</find>
+      <find>img</find>
+      <find>lock</find>
+      <find>runcon</find>
+      <find>dropdb</find>
+      <find>startServer</find>
+      <find>start</find>
+      <find>scripts</find>
+      <find>assert</find>
+      <find>assert.eq</find>
+      <find>testcases</find>
+      <find>lob</find>
+      <find>after_eac</find>
     </findStrings>
     <replaceStrings>
       <replace>class=&quot;btn btn-primary btn-sm&quot;</replace>
@@ -262,15 +394,22 @@
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/automated_components/selenium_components/createNewSubmissionTest.js" />
         <option value="$PROJECT_DIR$/automated_components/selenium_components/title_test.js" />
-        <option value="$PROJECT_DIR$/automated_components/selenium_components/after_each_test.js" />
-        <option value="$PROJECT_DIR$/automated_components/selenium_components/before_each_test.js" />
         <option value="$PROJECT_DIR$/automated_components/selenium_components/import_sample_data_test.js" />
-        <option value="$PROJECT_DIR$/automated_components/selenium_components/create_new_submission_test.js" />
-        <option value="$PROJECT_DIR$/ProcessAutomation.js" />
+        <option value="$PROJECT_DIR$/PatchConfiguration.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/QAProcessAutomation.html" />
-        <option value="$PROJECT_DIR$/PatchConfiguration.html" />
         <option value="$PROJECT_DIR$/PatchTestCases.html" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/automated_components/testCases/TestCase-2.js" />
+        <option value="$PROJECT_DIR$/automated_components/testCases/TestCase-3.js" />
+        <option value="$PROJECT_DIR$/automated_components/selenium_components/after_each_test.js" />
+        <option value="$PROJECT_DIR$/test/TestCase-2.js" />
+        <option value="$PROJECT_DIR$/test/test_suite.js" />
+        <option value="$PROJECT_DIR$/automated_components/selenium_components/create_new_account_test.js" />
+        <option value="$PROJECT_DIR$/automated_components/selenium_components/create_new_submission_test.js" />
+        <option value="$PROJECT_DIR$/ProcessAutomation.js" />
+        <option value="$PROJECT_DIR$/automated_components/selenium_components/before_each_test.js" />
+        <option value="$PROJECT_DIR$/test/TestCase-1.js" />
         <option value="$PROJECT_DIR$/ReviewAndRun.html" />
       </list>
     </option>
@@ -285,10 +424,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1911" />
+    <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
-    <option name="height" value="1218" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -306,7 +445,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -328,13 +466,14 @@
             <path>
               <item name="automation_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="automation_project" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -345,6 +484,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -363,11 +503,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.QAProcessAutomation.html">
+  <component name="RunManager" selected="Mocha.test\test_suite.js">
     <configuration name="PatchAcceptanceTesting.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/automation_project/PatchAcceptanceTesting.html" />
-    <configuration name="PatchConfiguration.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/automation_project/PatchConfiguration.html" />
-    <configuration name="ProcessAutomation.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="ProcessAutomation.js" working-dir="$PROJECT_DIR$" />
     <configuration name="QAProcessAutomation.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/automation_project/QAProcessAutomation.html" />
+    <configuration name="Test Suite" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/test_suite.js</test-file>
+      <test-names>
+        <name value="Test Suite" />
+      </test-names>
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -791,20 +943,31 @@
       <method />
     </configuration>
     <configuration name="createNewSubmissionTest.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="createNewSubmissionTest.js" working-dir="$PROJECT_DIR$/automated_components/selenium_components" />
+    <configuration name="test\test_suite.js" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/test/test_suite.js</test-file>
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.PatchConfiguration.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.QAProcessAutomation.html" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.ProcessAutomation.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.createNewSubmissionTest.js" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.PatchAcceptanceTesting.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.QAProcessAutomation.html" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.createNewSubmissionTest.js" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.PatchAcceptanceTesting.html" />
+      <item index="3" class="java.lang.String" itemvalue="Mocha.test\test_suite.js" />
+      <item index="4" class="java.lang.String" itemvalue="Mocha.Test Suite" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.QAProcessAutomation.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.PatchAcceptanceTesting.html" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.createNewSubmissionTest.js" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.PatchConfiguration.html" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.ProcessAutomation.js" />
+        <item index="0" class="java.lang.String" itemvalue="Mocha.test\test_suite.js" />
+        <item index="1" class="java.lang.String" itemvalue="Mocha.Test Suite" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.QAProcessAutomation.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.PatchAcceptanceTesting.html" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.createNewSubmissionTest.js" />
       </list>
     </recent_temporary>
   </component>
@@ -821,26 +984,58 @@
       <workItem from="1509817513926" duration="32000" />
       <workItem from="1509817876213" duration="71000" />
       <workItem from="1509819142005" duration="75979000" />
-      <workItem from="1510248199520" duration="13615000" />
+      <workItem from="1510248199520" duration="38588000" />
+      <workItem from="1510463480433" duration="7460000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Test_Suite - 2017.11.11 at 21h 55m 55s.xml">
+      <configuration name="Test Suite" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Test_Suite - 2017.11.11 at 21h 56m 08s.xml">
+      <configuration name="Test Suite" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test_test_suite_js - 2017.11.11 at 21h 35m 35s.xml">
+      <configuration name="test\test_suite.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test_test_suite_js - 2017.11.11 at 21h 37m 01s.xml">
+      <configuration name="test\test_suite.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test_test_suite_js - 2017.11.11 at 21h 54m 44s.xml">
+      <configuration name="test\test_suite.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test_test_suite_js - 2017.11.11 at 21h 56m 22s.xml">
+      <configuration name="test\test_suite.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test_test_suite_js - 2017.11.11 at 21h 57m 04s.xml">
+      <configuration name="test\test_suite.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test_test_suite_js - 2017.11.11 at 21h 58m 27s.xml">
+      <configuration name="test\test_suite.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test_test_suite_js - 2017.11.11 at 21h 58m 47s.xml">
+      <configuration name="test\test_suite.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test_test_suite_js - 2017.11.11 at 22h 02m 03s.xml">
+      <configuration name="test\test_suite.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89697000" />
+    <option name="totallyTimeSpent" value="122130000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1911" y="-9" width="1938" height="1218" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.184375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32841328" sideWeight="0.50625" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32841328" sideWeight="0.49375" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37086093" sideWeight="0.49609375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43995634" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37008733" sideWeight="0.49427083" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.116236165" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3941048" sideWeight="0.49583334" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -851,6 +1046,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.360262" sideWeight="0.49375" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -864,35 +1060,80 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/import_sample_data_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/after_each_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProcessAutomation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4389">
+          <caret line="209" column="63" lean-forward="false" selection-start-line="209" selection-start-column="63" selection-end-line="209" selection-end-column="63" />
+          <folding>
+            <marker date="1510470372708" expanded="true" signature="13502:13519" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="13673:13683" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="14932:14943" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="14932:14962" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="14932:14969" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="15095:15106" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="15095:15132" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PatchConfiguration.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding>
-            <element signature="e#344#350#0" expanded="true" />
-            <element signature="e#350#356#0" expanded="true" />
-            <element signature="e#356#362#0" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#3;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#6;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1510277084659" expanded="false" signature="2703:2718" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="2805:2817" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="2941:2953" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="3081:3093" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="3233:3255" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="3378:3390" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="3510:3524" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="3601:3613" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="3738:3760" ph="..." />
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#518#524#0" expanded="false" />
+            <element signature="e#524#530#0" expanded="false" />
+            <element signature="e#530#536#0" expanded="false" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#select#0;n#td#1;n#tr#2;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#3;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#6;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1510346579369" expanded="false" signature="4103:4118" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="4205:4217" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="4341:4353" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="4481:4493" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="4633:4655" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="4778:4790" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="4910:4924" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="5001:5013" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="5138:5160" ph="..." />
           </folding>
         </state>
       </provider>
@@ -902,31 +1143,37 @@
         <state relative-caret-position="1134">
           <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
           <folding>
-            <element signature="e#367#373#0" expanded="true" />
-            <element signature="e#373#379#0" expanded="true" />
-            <element signature="e#379#385#0" expanded="true" />
-            <element signature="e#535#541#0" expanded="true" />
-            <element signature="e#541#547#0" expanded="true" />
-            <element signature="e#547#553#0" expanded="true" />
-            <element signature="e#741#747#0" expanded="true" />
-            <element signature="e#747#753#0" expanded="true" />
-            <element signature="e#753#759#0" expanded="true" />
-            <element signature="e#1249#1255#0" expanded="true" />
-            <element signature="e#1255#1261#0" expanded="true" />
             <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1572#1578#0" expanded="true" />
-            <element signature="e#1578#1584#0" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#589#595#0" expanded="true" />
+            <element signature="e#595#601#0" expanded="true" />
+            <element signature="e#601#607#0" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1356#1362#0" expanded="true" />
+            <element signature="e#1362#1368#0" expanded="true" />
+            <element signature="e#1368#1374#0" expanded="true" />
+            <element signature="e#1437#1443#0" expanded="true" />
+            <element signature="e#1443#1449#0" expanded="true" />
+            <element signature="e#1545#1551#0" expanded="true" />
+            <element signature="e#1551#1557#0" expanded="true" />
+            <element signature="e#1557#1563#0" expanded="true" />
+            <element signature="e#1630#1636#0" expanded="true" />
+            <element signature="e#1636#1642#0" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#3;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2162#2168#0" expanded="true" />
+            <element signature="e#2168#2174#0" expanded="true" />
+            <element signature="n#style#0;n#button#4;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#col#2;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#col#2;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -936,9 +1183,31 @@
         <state relative-caret-position="399">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#333#339#0" expanded="false" />
-            <element signature="e#339#345#0" expanded="false" />
-            <element signature="e#345#351#0" expanded="false" />
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#540#546#0" expanded="true" />
+            <element signature="e#546#552#0" expanded="true" />
+            <element signature="e#552#558#0" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#1;n#tr#1;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3177#3183#0" expanded="true" />
+            <element signature="e#3183#3189#0" expanded="true" />
+            <element signature="e#3277#3283#1" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#col#2;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -956,13 +1225,13 @@
         <state relative-caret-position="9681">
           <caret line="461" column="66" lean-forward="false" selection-start-line="461" selection-start-column="66" selection-end-line="461" selection-end-column="66" />
           <folding>
-            <marker date="1510276651921" expanded="true" signature="13280:13297" ph="..." />
-            <marker date="1510276651921" expanded="true" signature="13451:13461" ph="..." />
-            <marker date="1510276651921" expanded="true" signature="14710:14721" ph="..." />
-            <marker date="1510276651921" expanded="true" signature="14710:14740" ph="..." />
-            <marker date="1510276651921" expanded="true" signature="14710:14747" ph="..." />
-            <marker date="1510276651921" expanded="true" signature="14873:14884" ph="..." />
-            <marker date="1510276651921" expanded="true" signature="14873:14910" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="13502:13519" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="13673:13683" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="14932:14943" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="14932:14962" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="14932:14969" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="15095:15106" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="15095:15132" ph="..." />
           </folding>
         </state>
       </provider>
@@ -983,19 +1252,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/createNewSubmissionTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1554">
-          <caret line="74" column="23" lean-forward="false" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/createNewSubmissionTest.js" />
     <entry file="file://$PROJECT_DIR$/RunServer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,7 +1272,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1035,7 +1295,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,30 +1308,8 @@
     <entry file="file://$PROJECT_DIR$/automated_components/create_submission_test.js" />
     <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/x.html" />
     <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/package.json" />
-    <entry file="file://$PROJECT_DIR$/Original.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/cancelPolicyTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js" />
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/cancelPolicyTest.js" />
     <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/title_test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1081,58 +1318,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/issuePAPolicyChangeTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/createNewAccountTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/createNewSubmissionTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24" lean-forward="true" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/issuePAPolicyChangeTest.js" />
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/createNewAccountTest.js" />
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/createNewSubmissionTest.js" />
     <entry file="file://$PROJECT_DIR$/PatchAcceptanceTesting.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/before_each_test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/create_new_submission_test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/after_each_test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1153,97 +1345,254 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProcessAutomation.js">
+    <entry file="file://$PROJECT_DIR$/PatchConfiguration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="424" column="77" lean-forward="false" selection-start-line="424" selection-start-column="77" selection-end-line="424" selection-end-column="77" />
+        <state relative-caret-position="0">
+          <caret line="73" column="104" lean-forward="false" selection-start-line="73" selection-start-column="104" selection-end-line="73" selection-end-column="104" />
           <folding>
-            <marker date="1510276651921" expanded="true" signature="13280:13297" ph="..." />
-            <marker date="1510276651921" expanded="true" signature="13451:13461" ph="..." />
-            <marker date="1510276651921" expanded="true" signature="14710:14721" ph="..." />
-            <marker date="1510276651921" expanded="true" signature="14710:14740" ph="..." />
-            <marker date="1510276651921" expanded="true" signature="14710:14747" ph="..." />
-            <marker date="1510276651921" expanded="true" signature="14873:14884" ph="..." />
-            <marker date="1510276651921" expanded="true" signature="14873:14910" ph="..." />
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#518#524#0" expanded="false" />
+            <element signature="e#524#530#0" expanded="false" />
+            <element signature="e#530#536#0" expanded="false" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#select#0;n#td#1;n#tr#2;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#3;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#6;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1510346579369" expanded="false" signature="4103:4118" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="4205:4217" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="4341:4353" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="4481:4493" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="4633:4655" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="4778:4790" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="4910:4924" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="5001:5013" ph="..." />
+            <marker date="1510346579369" expanded="false" signature="5138:5160" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Original.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3276">
+          <caret line="156" column="34" lean-forward="false" selection-start-line="156" selection-start-column="30" selection-end-line="156" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/QAProcessAutomation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PatchConfiguration.html">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="163">
+          <caret line="166" column="46" lean-forward="false" selection-start-line="166" selection-start-column="46" selection-end-line="166" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/chai/chai.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="4204" column="18" lean-forward="false" selection-start-line="4204" selection-start-column="9" selection-end-line="4204" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/testCases/TestCase-1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/testCases/TestCase-2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/testCases/TestCase-3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/after_each_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestCase-2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="22" column="109" lean-forward="true" selection-start-line="22" selection-start-column="109" selection-end-line="22" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_suite.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProcessAutomation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="509" column="68" lean-forward="false" selection-start-line="509" selection-start-column="68" selection-end-line="509" selection-end-column="68" />
           <folding>
-            <element signature="e#344#350#0" expanded="true" />
-            <element signature="e#350#356#0" expanded="true" />
-            <element signature="e#356#362#0" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#3;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#6;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1510277084659" expanded="false" signature="2703:2718" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="2805:2817" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="2941:2953" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="3081:3093" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="3233:3255" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="3378:3390" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="3510:3524" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="3601:3613" ph="..." />
-            <marker date="1510277084659" expanded="false" signature="3738:3760" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="13502:13519" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="13673:13683" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="14932:14943" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="14932:14962" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="14932:14969" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="15095:15106" ph="..." />
+            <marker date="1510470372708" expanded="true" signature="15095:15132" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/before_each_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PatchTestCases.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="394">
+          <caret line="57" column="6" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="57" selection-end-column="6" />
           <folding>
-            <element signature="e#367#373#0" expanded="true" />
-            <element signature="e#373#379#0" expanded="true" />
-            <element signature="e#379#385#0" expanded="true" />
-            <element signature="e#535#541#0" expanded="true" />
-            <element signature="e#541#547#0" expanded="true" />
-            <element signature="e#547#553#0" expanded="true" />
-            <element signature="e#741#747#0" expanded="true" />
-            <element signature="e#747#753#0" expanded="true" />
-            <element signature="e#753#759#0" expanded="true" />
-            <element signature="e#1249#1255#0" expanded="true" />
-            <element signature="e#1255#1261#0" expanded="true" />
             <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1572#1578#0" expanded="true" />
-            <element signature="e#1578#1584#0" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#589#595#0" expanded="true" />
+            <element signature="e#595#601#0" expanded="true" />
+            <element signature="e#601#607#0" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1356#1362#0" expanded="true" />
+            <element signature="e#1362#1368#0" expanded="true" />
+            <element signature="e#1368#1374#0" expanded="true" />
+            <element signature="e#1437#1443#0" expanded="true" />
+            <element signature="e#1443#1449#0" expanded="true" />
+            <element signature="e#1545#1551#0" expanded="true" />
+            <element signature="e#1551#1557#0" expanded="true" />
+            <element signature="e#1557#1563#0" expanded="true" />
+            <element signature="e#1630#1636#0" expanded="true" />
+            <element signature="e#1636#1642#0" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#3;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2162#2168#0" expanded="true" />
+            <element signature="e#2168#2174#0" expanded="true" />
+            <element signature="n#style#0;n#button#4;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#col#2;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#col#2;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestCase-1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/create_new_submission_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="103" lean-forward="false" selection-start-line="1" selection-start-column="103" selection-end-line="1" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automated_components/selenium_components/create_new_account_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReviewAndRun.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="116">
+          <caret line="64" column="56" lean-forward="false" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#540#546#0" expanded="true" />
+            <element signature="e#546#552#0" expanded="true" />
+            <element signature="e#552#558#0" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#1;n#tr#1;n#table#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3177#3183#0" expanded="true" />
+            <element signature="e#3183#3189#0" expanded="true" />
+            <element signature="e#3277#3283#1" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#col#2;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

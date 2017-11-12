@@ -1,40 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:border="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8"/>
     <title>
-        Patch Test Cases
+        Test Cases
     </title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body onload="writeTestListToPage()">
-<h1>Patch Test Cases</h1>
-<div id="buttonSet">
-    <button class="button leftpaneButton" onclick="window.location.href='QAProcessAutomation.html'" title="Home">Home&nbsp;&nbsp;&nbsp;<img src="resources/home-icon.png" height="15" width="15"/></button>
-    <br>
-    <button class="button leftpaneButton" id="addGosuTest">Add Gosu Test&nbsp;&nbsp;&nbsp;<img src="resources/gosu.png" height="15" width="15"/></button>
-    <br>
-    <button class="button leftpaneButton" onClick="addTestCase(this.id)" id="addSeleniumTestCase">Add Selenium Test&nbsp;&nbsp;&nbsp;<img src="resources/selenium.png" height="15" width="20"/></button>
-    <br>
-    <button class="button leftpaneButton" onClick="showTestList()" id="showTestList">Show Test List</button>
-    <br>
-    <button class="button leftpaneButton" onclick="window.location.href='PatchConfiguration.html'" title="PatchConfiguration"><< Back</button>
-    <br>
-    <button class="button leftpaneButton" onclick="window.location.href='ReviewAndRun.html'" title="ReviewAndRun">Next >></button>
-</div>
-<br>
-&nbsp;&nbsp;<table id="testCreatorTable" style="margin-left:200px;width:80%;visibility: hidden">
-    <tr bgcolor= #7fffd4>
-        <th style="width:40%">Test Case</th>
+<h1>Select Test Cases:</h1>
+<table style="box-shadow: none;border: none">
+    <tr  style="border: none">
+        <td valign="top" style="border: none;text-align: left">
+            <br>
+            <div id="buttonSet">
+                <button class="button leftpaneButton" onclick="window.location.href='QAProcessAutomation.html'" title="Home">Home&nbsp;&nbsp;&nbsp;<img src="resources/home-icon.png" height="15" width="15"/></button>
+                <br>
+                <button class="button leftpaneButton" onclick="window.location.href='PatchConfiguration.html'" title="Configuration">Configuration</button>
+                <br>
+                <button class="button leftpaneButton" onclick="window.location.href='PatchTestCases.html'" title="Test Cases">Test Cases</button>
+                <br>
+                <button class="button leftpaneButton" onclick="window.location.href='ReviewAndRun.html'" title="ReviewAndRun">Review and Run</button>
+                <br>
+            </div>
+        </td>
+        <td style="width: 70%;border: none;">
+            <button class="button" id="addGosuTest">Add Gosu Test&nbsp;&nbsp;&nbsp;<img src="resources/gosu.png" height="10" width="15"/></button>&nbsp;&nbsp;<button class="button" onClick="addTestCase(this.id)" id="addSeleniumTestCase">Add Selenium Test&nbsp;&nbsp;&nbsp;<img src="resources/selenium.png" height="10" width="20"/></button>&nbsp;&nbsp;<button class="button" onClick="showTestList()" id="showTestList">Show Test List</button>
+            <br>
+            <br>
+            <table id="testCreatorTable" style="margin-left:100px;width:112%;visibility: hidden">
+                <tr bgcolor= #7fffd4>
+                    <th style="width:40%">Test Case</th>
+                </tr>
+            </table>
+            <br>
+            <button id="addToListButton" style="visibility: hidden;margin-left: 850px" onClick="addTestToList()">Add test flow to list</button>&nbsp;&nbsp;<button id="addToListCancelButton" style="visibility: hidden" onClick="window.location.href='PatchTestCases.html'">Cancel</button>
+        </td>
     </tr>
 </table>
-<br>
-<button id="addToListButton" style="visibility: hidden;margin-left: 850px" onClick="addTestToList()">Add test flow to list</button>&nbsp;&nbsp;<button id="addToListCancelButton" style="visibility: hidden" onClick="window.location.href='PatchTestCases.html'">Cancel</button>
-
+<br><br><br><br><br><br><br><br><br><br>
 <div id="testCaseListSection" style="visibility: hidden">
 <hr>
 <h2>Test Case List:</h2>
-<button id="editTestCasesList" style="margin-left: 200px" onClick="editTestCasesList()">Edit</button>
+<button id="editTestCasesList" class="submitButton" style="margin-left: 200px" onClick="editTestCasesList()">Edit</button>
 <br><br>
 <table id="testCasesList" style="margin-left:200px;width:80%">
     <col />

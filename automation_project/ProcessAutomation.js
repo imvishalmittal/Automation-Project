@@ -1,5 +1,7 @@
 var d = new Date();
 var testFlow = "";
+var dbExists = false;
+var buildDir = "";
 function backupDBExists(existence){
 	if (existence == "no"){		
 		document.getElementById("prerequisiteTable").style.visibility="visible";
@@ -13,7 +15,7 @@ function backupDBExists(existence){
 		document.getElementById("baseConfigForm").style.display="none";	
 	}
 }
-function runConfig(id){
+/*function runConfig(id){
 	var buildZipPath, dbName, dbServer, buildBranch, buildDir, patchPath;
 	var toDo = "";	
 	var testDirectory = document.getElementById("testDirectory").value;
@@ -45,18 +47,18 @@ function runConfig(id){
 		startServer(buildDir);
 		skm_LockScreen('LockOff');
 	}				
-}
+}*/
 function connectAndBackupDB() {
 	var connection = new ActiveXObject("ADODB.Connection") ; 
 	var connectionstring="Provider=SQLOLEDB;Data Source=REDSKULL\\SQLSERVER2012;UID=sa;PASSWORD=Gw_123;DATABASE=vmittal_PC804P5";	 
 	connection.Open(connectionstring);		
 	var rs = new ActiveXObject("ADODB.Recordset");	 
 	rs.Open("BACKUP DATABASE vmittal_PC804P5 TO DISK='C:\\vmittal_PC804P5.BAK' WITH FORMAT", connection);	
-	connection.close;	
+	connection.close;
 }
 function copyBuild(buildZipPath, testDirectory) {	
 	if (confirm("Copying build from " + buildZipPath + " to " + testDirectory + "??")){		    
-		document.getElementById("imgUpgCopyBuild").style.display = "inline";				
+		document.getElementById("imgUpgCopyBuild").style.display = "inline";
 		cmdLine = "xcopy " + buildZipPath + " " + testDirectory;			
 		var wsh = new ActiveXObject("WScript.Shell");
 		wsh.Run(cmdLine, 1, true);				
@@ -202,16 +204,21 @@ function updateParamValue(buildDir, configFile, paramToUpdate){
 	fso.close;	
 	document.getElementById("imgUpdConfigEIT").src = "resources/check-mark.gif";
 }	
-function startServer(buildDir) {
-	var wsh, cmdLineDevStart;
-	if (buildDir == undefined){var buildDir = prompt("Please provide build directory path:\n(like: C:\\test\\PolicyCenter807\\PolicyCenter\\)");}	
-	cmdLineDevStart = buildDir + "\\bin\\gwpc.bat dev-start";
-    	
-	wsh = new ActiveXObject("WScript.Shell");	
-	document.getElementById("imgUpgStrtSrvr").style.display = "inline";
-	wsh.Run(cmdLineDevStart);//, 1, true);
-	//wsh.close;
-	if(pingServer('8180')){document.getElementById("imgUpgStrtSrvr").src = "resources/check-mark.gif";}	
+function startServer() {
+    var wsh, cmdLineDevStart;
+    if(pingServer('8180')) {
+        alert("Server already running on port!!");
+    }
+    else{
+        if (document.buildDir == undefined || ""){document.buildDir = prompt("Please provide build directory path:\n(like: C:\\test\\PolicyCenter807\\PolicyCenter\\)");}
+        cmdLineDevStart = document.buildDir + "\\bin\\gwpc.bat dev-start";
+
+        wsh = new ActiveXObject("WScript.Shell");
+        document.getElementById("imgUpgStrtSrvr").style.display = "inline";
+        wsh.Run(cmdLineDevStart);//, 1, true);
+        //wsh.close;
+        if(pingServer('8180')){document.getElementById("imgUpgStrtSrvr").src = "resources/check-mark.gif";}
+    }
 }
 function onCheckboxChange(id, objName) {
 	var changedItemState = "";
@@ -262,23 +269,23 @@ function createConfigurationFile(){
     buildBranch = document.getElementById("upgradeBuildBranch").value;
     patchPath = document.getElementById("patchBuildZipPath").value;
     var fso = new ActiveXObject("Scripting.FileSystemObject");
-    if(fso.fileExists("C:\\Configuration.csv")){fso.DeleteFile("C:\\Configuration.csv");}
-    newFile = fso.OpenTextFile("C:\\Configuration.csv", 8, true);
-    newFile.WriteLine("testDirectory," + testDirectory);
-    newFile.WriteLine("newBuildZipPath," + buildZipPath);
-    newFile.WriteLine("newDbName," + dbName);
-    newFile.WriteLine("upgradeDBServer," + dbServer);
-    newFile.WriteLine("upgradeBuildBranch," + buildBranch);
-    newFile.WriteLine("patchBuildZipPath," + patchPath);
+    if(fso.fileExists("C:\\Configuration.txt")){fso.DeleteFile("C:\\Configuration.txt");}
+    newFile = fso.OpenTextFile("C:\\Configuration.txt", 8, true);
+    newFile.WriteLine("testDirectory::" + testDirectory);
+    newFile.WriteLine("newBuildZipPath::" + buildZipPath);
+    newFile.WriteLine("newDbName::" + dbName);
+    newFile.WriteLine("upgradeDBServer::" + dbServer);
+    newFile.WriteLine("upgradeBuildBranch::" + buildBranch);
+    newFile.WriteLine("patchBuildZipPath::" + patchPath);
     newFile.close();
     fso.close;
 }
 function loadConfiguration(){
     var fso = new ActiveXObject("Scripting.FileSystemObject");
-    if(fso.fileExists("C:\\Configuration.csv")){
-    	var configFile= fso.OpenTextFile("C:\\Configuration.csv", 1, false)
+    if(fso.fileExists("C:\\Configuration.txt")){
+    	var configFile= fso.OpenTextFile("C:\\Configuration.txt", 1, false)
         while(!configFile.AtEndOfStream) {
-            var splitLine= configFile.ReadLine().split(",");
+            var splitLine= configFile.ReadLine().split("::");
             if(splitLine[1] != ""){document.getElementById(splitLine[0]).value = splitLine[1];}
         }
         configFile.Close();
@@ -290,7 +297,7 @@ function addTestCase(id) {
 	document.getElementById("testCreatorTable").style.visibility = "visible";
     document.getElementById("addToListButton").style.visibility = "visible";
     document.getElementById("addToListCancelButton").style.visibility = "visible";
-	document.getElementById("buttonSet").style.visibility = "collapse";
+	document.getElementById("addSeleniumTestCase").style.visibility = "hidden";
     //var x = document.getElementById("testCreatorTable").rows.length
     var table = document.getElementById("testCreatorTable");
 
@@ -390,6 +397,7 @@ function addTestToList() {
         document.getElementById("addToListButton").style.visibility = "hidden";
         document.getElementById("addToListCancelButton").style.visibility = "hidden";
         document.getElementById("buttonSet").style.visibility = "visible";
+        document.getElementById("addSeleniumTestCase").style.visibility = "visible";
         alert("Test added to list!!!");
     }
     else{
@@ -450,6 +458,15 @@ function editTestCasesList() {
         writeTestListToFile();
     }
 }
+function editConfiguration() {
+    if (document.getElementById("editConfiguration").innerHTML == "Edit"){
+        document.getElementById("editConfiguration").innerHTML = "Save";
+    }
+    else{
+        document.getElementById("editConfiguration").innerHTML = "Edit";
+        createConfigurationFile()
+    }
+}
 function writeTestListToFile() {
     var fso = new ActiveXObject("Scripting.FileSystemObject");
     if(fso.fileExists("C:\\TestFile.csv")){fso.DeleteFile("C:\\TestFile.csv");}
@@ -461,30 +478,6 @@ function writeTestListToFile() {
 	}
     newFile.close();
     fso.close;
-}
-
-//*********************************Tests**************************
-function titleVersionCheck(){
-    var wsh = new ActiveXObject("WScript.Shell");
-    var output = wsh.exec("node C:\\vmittal\\Self_Learning\\Demo-Project\\automation_project\\test_files\\title_test.js");
-    wsh.close();
-    var toPrint = output.StdOut.ReadAll();
-    document.getElementById("spnTitleVersionDetail").innerText = 'Title:    ' + toPrint;
-}
-function createSubmissionTest(){
-    var wsh = new ActiveXObject("WScript.Shell");
-    var output = wsh.exec("node C:\\vmittal\\Self_Learning\\Demo-Project\\automation_project\\test_files\\create_submission_test.js");
-    wsh.close();
-    var toPrint = output.StdOut.ReadAll();
-    document.getElementById("spnPolicyNumber").innerText = 'Policy number:   ' + toPrint;
-}
-function importSampleDataTest(){
-    var wsh = new ActiveXObject("WScript.Shell");
-    var output = wsh.exec("node C:\\vmittal\\Self_Learning\\Demo-Project\\automation_project\\test_files\\import_sample_data_test.js");
-    wsh.close();
-    var toPrint = output.StdOut.ReadAll();
-    alert(toPrint);
-    document.getElementById("spnImportSampleData").innerText = 'Import Status:   ' + toPrint;
 }
 function loadOptionsFromFile(id, filePath, colLabel){
     var selectList = document.getElementById(id);
@@ -509,10 +502,12 @@ function loadOptionsFromFile(id, filePath, colLabel){
 }
 function createTestScriptFile(testScriptFileName, testFlow){
     var fso = new ActiveXObject("Scripting.FileSystemObject");
-    var testScriptFileMerged = "C:\\vmittal\\Project\\SelfLearning\\GitHub\\automation_project\\automated_components\\testCases\\" + testScriptFileName;
+    var testScriptFileMerged = "C:\\vmittal\\Project\\SelfLearning\\GitHub\\automation_project\\test\\" + testScriptFileName;
     if(fso.fileExists(testScriptFileMerged)){fso.DeleteFile(testScriptFileMerged);}
 
     var newFile = fso.OpenTextFile(testScriptFileMerged, 8, true);
+    newFile.writeLine("var lob = 'CP';");
+    newFile.writeLine("var fileName = '" + testScriptFileName + "';");
 
     var scriptFile = fso.OpenTextFile("C:\\vmittal\\Project\\SelfLearning\\GitHub\\automation_project\\automated_components\\selenium_components\\before_each_test.js", 1, false);
     var fileCopyContent = scriptFile.ReadAll();
@@ -521,14 +516,14 @@ function createTestScriptFile(testScriptFileName, testFlow){
 
     var splitTestFlow = testFlow.split(" --&gt; ");
     for(var i=0; i < splitTestFlow.length; i++){
-    	if (splitTestFlow[i] != "") {
+        if (splitTestFlow[i] != "") {
             var testScript = getScriptFileName(splitTestFlow[i]);
             var scriptFile = fso.OpenTextFile("C:\\vmittal\\Project\\SelfLearning\\GitHub\\automation_project\\automated_components\\selenium_components\\" + testScript, 1, false);
             var fileCopyContent = scriptFile.ReadAll();
             scriptFile.close();
             newFile.writeLine(fileCopyContent);
         }
-	}
+    }
 
     var scriptFile = fso.OpenTextFile("C:\\vmittal\\Project\\SelfLearning\\GitHub\\automation_project\\automated_components\\selenium_components\\after_each_test.js", 1, false);
     var fileCopyContent = scriptFile.ReadAll();
@@ -545,11 +540,116 @@ function getScriptFileName(transactionType){
         var tempLine = fileToRead.ReadLine();
         var splitLine = tempLine.split(":");
         if (transactionType.indexOf(splitLine[0]) >= 0){
-        	var scriptName=  splitLine[1];
-        	return scriptName;
-        	break;
-		}
+            var scriptName=  splitLine[1];
+            return scriptName;
+            break;
+        }
     }
     fileToRead.close();
     ofs.close;
+}
+function configureBuild(){
+    var configuration = {
+        testDirectory: "",
+        upgradeBuildBranch: "",
+        newBuildZipPath: "",
+        upgradeDBServer: "",
+        newDbName: "",
+        patchBuildZipPath: ""
+    }
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    if(fso.fileExists("C:\\Configuration.txt")){
+        var configFile= fso.OpenTextFile("C:\\Configuration.txt", 1, false)
+        while(!configFile.AtEndOfStream) {
+            var splitLine= configFile.ReadLine().split("::");
+            configuration[splitLine[0]] = splitLine[1].replace("\\\\", "\\");
+        }
+        configFile.Close();
+    }
+    fso.close;
+    runConfig(configuration);
+}
+function runConfig(configuration){
+    var testDirectory, buildZipPath, dbName, dbServer, buildBranch, buildDir, patchPath;
+    var toDo = "";
+	testDirectory = (configuration.testDirectory + "\\").replace("\\\\","\\");
+	buildZipPath = configuration.newBuildZipPath.replace("\\\\","\\")
+	dbName = configuration.newDbName.replace("\\\\","\\")
+	dbServer = configuration.upgradeDBServer.replace("\\\\","\\")
+	buildBranch = configuration.upgradeBuildBranch
+	patchPath = configuration.patchBuildZipPath.replace("\\\\","\\");
+    document.dbExists = false;
+    if(verifyConfig(testDirectory, dbName, dbServer)){
+        if (confirm("Setup patch build??")){
+            skm_LockScreen('LockOn');
+            copyBuild(buildZipPath, testDirectory);
+            document.buildDir = unzipBuild(buildZipPath, testDirectory);
+            if(!document.dbExists){createDB(dbName, dbServer);}
+            updateDBConfig(dbServer, dbName, buildBranch, document.buildDir);
+            var buildStatus = true;
+            if(buildBranch != "granite" && patchPath != ""){applyPatch(buildBranch, document.buildDir, patchPath, buildStatus);}
+            updateConfig(buildBranch, document.buildDir);
+            dropDB(buildBranch, document.buildDir);
+            skm_LockScreen('LockOff');
+        }
+    }
+}
+function verifyConfig(testDirectory, dbName, dbServer){
+    document.getElementById("verifyConfigurationLabel").style.display = "inline";
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+	if(!fso.FolderExists(testDirectory)){
+    	if(confirm(testDirectory + " doesn't exists. Click 'Ok' to create it!")){
+    		var a = fso.CreateFolder(testDirectory);
+    		return true;
+		}
+		else{return false;}
+	}
+	fso.close;
+
+    var connection = new ActiveXObject("ADODB.Connection") ;
+    var connectionstring="Provider=SQLOLEDB;Data Source=" + dbServer + ";UID=sa;PASSWORD=Gw_123";
+    connection.Open(connectionstring);
+    var rs = new ActiveXObject("ADODB.Recordset");
+    rs.Open("SELECT COUNT(NAME) as COUNT FROM SYS.DATABASES WHERE NAME= '"  + dbName + "'", connection);
+
+	if(rs("COUNT").value > 0) {
+        if (!confirm(dbName + " database already exists. Click 'Ok' to continue!")) {
+            document.getElementById("verifyConfigurationLabel").style.display = "none";
+            return false;
+        }
+        else{
+        	document.dbExists = true;
+            document.getElementById("verifyConfigurationLabel").style.display = "none";
+            return true;
+		}
+    }
+    else{
+        document.getElementById("verifyConfigurationLabel").style.display = "none";
+        return true;
+	}
+    rs.close();
+    connection.close;
+}
+//*********************************Tests**************************
+function titleVersionCheck(){
+    var wsh = new ActiveXObject("WScript.Shell");
+    var output = wsh.exec("node C:\\vmittal\\Self_Learning\\Demo-Project\\automation_project\\test_files\\title_test.js");
+    wsh.close();
+    var toPrint = output.StdOut.ReadAll();
+    document.getElementById("spnTitleVersionDetail").innerText = 'Title:    ' + toPrint;
+}
+function createSubmissionTest(){
+    var wsh = new ActiveXObject("WScript.Shell");
+    var output = wsh.exec("node C:\\vmittal\\Self_Learning\\Demo-Project\\automation_project\\test_files\\create_submission_test.js");
+    wsh.close();
+    var toPrint = output.StdOut.ReadAll();
+    document.getElementById("spnPolicyNumber").innerText = 'Policy number:   ' + toPrint;
+}
+function importSampleDataTest(){
+    var wsh = new ActiveXObject("WScript.Shell");
+    var output = wsh.exec("node C:\\vmittal\\Self_Learning\\Demo-Project\\automation_project\\test_files\\import_sample_data_test.js");
+    wsh.close();
+    var toPrint = output.StdOut.ReadAll();
+    alert(toPrint);
+    document.getElementById("spnImportSampleData").innerText = 'Import Status:   ' + toPrint;
 }

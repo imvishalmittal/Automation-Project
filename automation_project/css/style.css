@@ -1,10 +1,11 @@
 h1 {
 	text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
-	background-color: #9e9e9e ;
-	border:3px solid black;
-	height: 8%;
+	background-color: azure ;
+	border:1px solid black;
+	height: 6%;
+	color:brown;
 	}
-h1, h2 {
+h2 {
 	text-align:center;
 	color:brown;	 
 	 }
@@ -14,16 +15,20 @@ p, table, input {
 	border-radius: 5px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
 p, tr, th, td, input {
 	color:black;
 	border: 1px solid black;
 	border-radius: 4px;
 	text-align: center;
+	font-size: 14px;
+}
+th {
+	color: brown;
 }
 button {
-	background-color: #4CAF50; /* Green */
+	background-color: cornflowerblue; /* Green */
 	border: none;
-	color: white;
 	padding: 5px 10px;
 	text-align: center;
 	text-decoration: none;
@@ -31,11 +36,14 @@ button {
 	font-size: 12px;
 	margin: 4px 2px;
 	cursor: pointer;
-	border-radius: 5px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 5px;
+	color: white;
 }
 .leftpaneButton{
+
 	width: 200px;
+	color: white;
 }
 .submitButton{
 	width: 100px;

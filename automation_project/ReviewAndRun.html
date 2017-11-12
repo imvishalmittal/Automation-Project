@@ -7,16 +7,81 @@
 </head>
 <body onload="writeTestListToPage()">
 <h1>Review And Run</h1>
-<button class="button leftpaneButton" onclick="window.location.href='QAProcessAutomation.html'" title="Home">Home&nbsp;&nbsp;&nbsp;<img src="resources/home-icon.png" height="15" width="15"/></button>
+<table style="box-shadow: none;border: none">
+    <tr  style="border: none">
+        <td valign="top" style="border: none;text-align: left">
+            <br>
+            <div id="buttonSet">
+                <button class="button leftpaneButton" onclick="window.location.href='QAProcessAutomation.html'" title="Home">Home&nbsp;&nbsp;&nbsp;<img src="resources/home-icon.png" height="15" width="15"/></button>
+                <br>
+                <button class="button leftpaneButton" onclick="window.location.href='PatchConfiguration.html'" title="Configuration">Configuration</button>
+                <br>
+                <button class="button leftpaneButton" onclick="window.location.href='PatchTestCases.html'" title="Test Cases">Test Cases</button>
+                <br>
+                <button class="button leftpaneButton" onclick="window.location.href='ReviewAndRun.html'" title="ReviewAndRun">Review and Run</button>
+                <br>
+            </div>
+        </td>
+        <td style="width: 80%;border: none">
+            <br>
+            <div><button style="margin-left: 20px" class="button" onclick="configureBuild()">Configure Build</button><label style="margin-left:20px;display: none" id="verifyConfigurationLabel">Verifying Configuration...</label></div>
+            <br>
+            <table id="configStatus" style="margin-left:370px;width:40%;visibility: visible">
+                <tr bgcolor= #7fffd4>
+                    <th style="width:70%">Configuration Step</th>
+                    <th style="width:60%">Status</th>
+                </tr>
+                <tr>
+                    <td>Copy Build</td>
+                    <td><img id="imgUpgCopyBuild" style="display:none;width:10%" src="resources/subprocessing.gif"></td>
+                </tr>
+                <tr>
+                    <td>Unzip Build</td>
+                    <td><img id="imgUpgunzBuild" style="display:none;width:10%" src="resources/subprocessing.gif"></td>
+                </tr>
+                <tr>
+                    <td>Create Database</td>
+                    <td><img id="imgUpgCreateDB" style="display:none;width:10%" src="resources/subprocessing.gif"></td>
+                </tr>
+                <tr>
+                    <td>Update DB Configuration File</td>
+                    <td><img id="imgUpgUpdDBConf" style="display:none;width:10%" src="resources/subprocessing.gif"></td>
+                </tr>
+                <tr>
+                    <td>Update Config.xml</td>
+                    <td><img id="imgUpdConfigEIT" style="display:none;width:10%" src="resources/subprocessing.gif"></td>
+                </tr>
+                <tr>
+                    <td>Drop DB</td>
+                    <td><img id="imgUpgDrpDB" style="display:none;width:10%" src="resources/subprocessing.gif"></td>
+                </tr>
+            </table>
+            <br>
+            <b style="margin-left: 400px">Port:</b> <input style="width: 50px" id="port" value="8180"></input>&nbsp;&nbsp;<button class="button" onClick="startServer()" id="startServerBtn">Start Server</button>&nbsp;<img id="imgUpgStrtSrvr" style="display:none;resize: both" src="resources/subprocessing.gif">
+        </td>
+    </tr>
+</table>
 <br>
-<button class="button leftpaneButton" id="runConfig" onclick="">Run Configuration</button>
-<br>
-<button class="button leftpaneButton" id="runTests" >Run Tests</button>
-<br>
-<button class="button leftpaneButton" onclick="window.location.href='PatchTestCases.html'" title="PatchTestCases"><< Back</button>
-<br>
-<hr>
-<br>
+<div id="testCaseListSection" style="visibility: visible">
+    <hr>
+    <h2>Test Case List:</h2>
+    <button id="editTestCasesList" class="submitButton" style="margin-left: 200px" onClick="editTestCasesList()">Edit</button>
+    <br><br>
+    <table id="testCasesList" style="margin-left:200px;width:80%">
+        <col />
+        <col />
+        <col id="testCaseListEditCol" style="visibility:collapse"/>
+        <tr bgcolor="#e9967a">
+            <th style="width:10%">Test#</th>
+            <th style="width:85%">Test Flow Steps</th>
+            <th></th>
+        </tr>
+    </table>
+    <br><br><br>
+</div><br>
 <script type="text/javascript" src='ProcessAutomation.js'></script>
+<div id="skm_LockPane" class="LockOff">
+    <img id="loading-image" src="resources/processing.gif" alt="Loading..."/>
+</div>
 </body>
 </html>
