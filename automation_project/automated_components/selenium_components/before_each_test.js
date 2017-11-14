@@ -18,7 +18,9 @@ test.after(function () {
 });
 
 test.describe( fileName , function() {
-    this.timeout(15000);
+    this.timeout(25000);
+
+    //Login as 'su'
     test.it('Log in', function () {
         driver.findElement(By.xpath('//*[@id="Login:LoginScreen:LoginDV:username-inputEl"]')).sendKeys('su');
         driver.findElement(By.xpath('//*[@id="Login:LoginScreen:LoginDV:password-inputEl"]')).sendKeys('gw');

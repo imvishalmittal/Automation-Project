@@ -206,8 +206,12 @@ function updateParamValue(buildDir, configFile, paramToUpdate){
 }	
 function startServer() {
     var wsh, cmdLineDevStart;
-    if(pingServer('8180')) {
+    var port = document.getElementById("port").value
+    if(pingServer(port,'ToCheck')) {
         alert("Server already running on port!!");
+        document.getElementById("imgUpgStrtSrvr").style.display = "inline";
+        document.getElementById("imgUpgStrtSrvr").src = "resources/check-mark.gif";
+        document.getElementById("testCaseListSection").style.visibility = 'visible';
     }
     else{
         if (document.buildDir == undefined || ""){document.buildDir = prompt("Please provide build directory path:\n(like: C:\\test\\PolicyCenter807\\PolicyCenter\\)");}
@@ -217,7 +221,10 @@ function startServer() {
         document.getElementById("imgUpgStrtSrvr").style.display = "inline";
         wsh.Run(cmdLineDevStart);//, 1, true);
         //wsh.close;
-        if(pingServer('8180')){document.getElementById("imgUpgStrtSrvr").src = "resources/check-mark.gif";}
+        if(pingServer(port,'')){
+            document.getElementById("imgUpgStrtSrvr").src = "resources/check-mark.gif";
+            document.getElementById("testCaseListSection").style.visibility = 'visible';
+        }
     }
 }
 function onCheckboxChange(id, objName) {
@@ -242,7 +249,7 @@ function skm_LockScreen(toSet)
          if (lock)
             lock.className = toSet;         					
       }
-function pingServer(port) {
+function pingServer(port, reason) {
 	for (var i = 0 ; i <= 15 ; i++) {
 		var wsh = new ActiveXObject("WScript.Shell");
 		var status = wsh.exec("netstat -aon");// + port);
@@ -251,7 +258,12 @@ function pingServer(port) {
 		if (status.StdOut.ReadAll().indexOf("0.0.0.0:" + port) >=0){
 			return true;
 			break;}
-		//else{alert("Server not yet started at port - " + port + ". Time elapsed: " + i + "mins.")}
+		else{
+            if(reason == 'ToCheck'){
+                return false;
+                break;
+            }
+        }
 		sleep(60000);
 	}
 }
@@ -506,7 +518,7 @@ function createTestScriptFile(testScriptFileName, testFlow){
     if(fso.fileExists(testScriptFileMerged)){fso.DeleteFile(testScriptFileMerged);}
 
     var newFile = fso.OpenTextFile(testScriptFileMerged, 8, true);
-    newFile.writeLine("var lob = 'CP';");
+    newFile.writeLine("var lob = 'PA';");
     newFile.writeLine("var fileName = '" + testScriptFileName + "';");
 
     var scriptFile = fso.OpenTextFile("C:\\vmittal\\Project\\SelfLearning\\GitHub\\automation_project\\automated_components\\selenium_components\\before_each_test.js", 1, false);
@@ -514,8 +526,8 @@ function createTestScriptFile(testScriptFileName, testFlow){
     scriptFile.close();
     newFile.writeLine(fileCopyContent);
 
-    var splitTestFlow = testFlow.split(" --&gt; ");
-    for(var i=0; i < splitTestFlow.length; i++){
+    var splitTestFlow = testFlow.split("--");
+    for(var i=0; i < splitTestFlow.length -1; i++){
         if (splitTestFlow[i] != "") {
             var testScript = getScriptFileName(splitTestFlow[i]);
             var scriptFile = fso.OpenTextFile("C:\\vmittal\\Project\\SelfLearning\\GitHub\\automation_project\\automated_components\\selenium_components\\" + testScript, 1, false);
@@ -528,6 +540,7 @@ function createTestScriptFile(testScriptFileName, testFlow){
     var scriptFile = fso.OpenTextFile("C:\\vmittal\\Project\\SelfLearning\\GitHub\\automation_project\\automated_components\\selenium_components\\after_each_test.js", 1, false);
     var fileCopyContent = scriptFile.ReadAll();
     scriptFile.close();
+    newFile.writeLine("});");
     newFile.writeLine(fileCopyContent);
     newFile.close();
     fso.close;
@@ -652,4 +665,9 @@ function importSampleDataTest(){
     var toPrint = output.StdOut.ReadAll();
     alert(toPrint);
     document.getElementById("spnImportSampleData").innerText = 'Import Status:   ' + toPrint;
+}
+function runTests() {
+    var wsh = new ActiveXObject("WScript.Shell");
+    wsh.run("C:\\vmittal\\Project\\SelfLearning\\GitHub\\automation_project\\test.bat");
+    wsh.close();
 }

@@ -62,19 +62,20 @@
     </tr>
 </table>
 <br>
-<div id="testCaseListSection" style="visibility: visible">
+<div id="testCaseListSection" style="visibility: hidden">
     <hr>
     <h2>Test Case List:</h2>
-    <button id="editTestCasesList" class="submitButton" style="margin-left: 200px" onClick="editTestCasesList()">Edit</button>
+    <button id="runTests" class="submitButton" style="margin-left: 200px" onClick="runTests()">Run Tests</button>&nbsp;&nbsp;<a href="results/report.html">Report</a>
     <br><br>
     <table id="testCasesList" style="margin-left:200px;width:80%">
         <col />
         <col />
-        <col id="testCaseListEditCol" style="visibility:collapse"/>
+        <col style="visibility:collapse"/>
         <tr bgcolor="#e9967a">
             <th style="width:10%">Test#</th>
             <th style="width:85%">Test Flow Steps</th>
             <th></th>
+            <th style="width:10%">Report</th>
         </tr>
     </table>
     <br><br><br>
