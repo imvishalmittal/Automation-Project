@@ -18,7 +18,7 @@ test.after(function () {
 });
 
 test.describe( fileName , function() {
-    this.timeout(25000);
+    this.timeout(50000);
 
     //Login as 'su'
     test.it('Log in', function () {

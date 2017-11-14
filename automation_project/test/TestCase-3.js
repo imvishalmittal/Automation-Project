@@ -1,5 +1,5 @@
 var lob = 'PA';
-var fileName = 'TestCase-1.js';
+var fileName = 'TestCase-3.js';
 var assert = require('chai').assert;
 var webdriver = require('selenium-webdriver'),
     By = webdriver.By,
