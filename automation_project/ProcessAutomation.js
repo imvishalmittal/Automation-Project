@@ -575,7 +575,7 @@ function configureBuild(){
         var configFile= fso.OpenTextFile("C:\\Configuration.txt", 1, false)
         while(!configFile.AtEndOfStream) {
             var splitLine= configFile.ReadLine().split("::");
-            configuration[splitLine[0]] = splitLine[1].replace("\\\\", "\\");
+            configuration[splitLine[0]] = splitLine[1];
         }
         configFile.Close();
     }
@@ -586,7 +586,7 @@ function runConfig(configuration){
     var testDirectory, buildZipPath, dbName, dbServer, buildBranch, buildDir, patchPath;
     var toDo = "";
 	testDirectory = (configuration.testDirectory + "\\").replace("\\\\","\\");
-	buildZipPath = configuration.newBuildZipPath.replace("\\\\","\\")
+	buildZipPath = configuration.newBuildZipPath
 	dbName = configuration.newDbName.replace("\\\\","\\")
 	dbServer = configuration.upgradeDBServer.replace("\\\\","\\")
 	buildBranch = configuration.upgradeBuildBranch

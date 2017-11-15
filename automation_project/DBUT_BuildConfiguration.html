@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+  <title>
+    Configuration
+  </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="loadConfiguration()">
+<h1>Select Configuration:</h1>
+<table style="border: none;box-shadow: none">
+    <tr  style="border: none">
+        <td valign="top" style="border: none">
+            <br>
+            <div id="buttonSet">
+                <button class="button leftpaneButton" onclick="window.location.href='QAProcessAutomation.html'" title="Home">Home&nbsp;&nbsp;&nbsp;<img src="resources/home-icon.png" height="15" width="15"/></button>
+                <br>
+                <button class="button leftpaneButton" onclick="window.location.href='DBUT_BuildConfiguration.html'" title="Configuration">Configuration</button>
+                <br>
+                <button class="button leftpaneButton" onclick="window.location.href='TestCases.html'" title="Test Cases">Test Cases</button>
+            </div>
+        </td>
+        <td style="width: 90%;border: none;">
+            <br><br>
+            <table align="center" style="width:60%;" id="prerequisiteTable">
+                <tr style="background-color: lightsalmon">
+                    <th>Config Parameter</th>
+                    <th>Config Value</th>
+                </tr>
+                <tr>
+                    <td style="width:15%">Test Directory:</td>
+                    <td><input type="text" style="width:100%;text-align: left" id="testDirectory"/></td>
+                </tr>
+                <tr>
+                    <td style="width:15%">Build Branch</td>
+                    <td>
+                        <select style="width:100%" id="upgradeBuildBranch" onChange="hidePatchOption()">
+                            <option value="diamond">Diamond(7.x)</option>
+                            <option value="emerald">Emerald(8.x)</option>
+                            <option value="ferrite">Ferrite(9.x)</option>
+                            <option value="granite">Granite(10.x)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Build Zip Path:</td>
+                    <td><input style="width:100%" type="file" accept=".zip" id="newBuildZipPath"></td>
+                </tr>
+                <tr id="patchBuildDetailsRow">
+                    <td>Patch Build Zip Path:</td>
+                    <td><input style="width:100%" type="file" accept=".zip" id="patchBuildZipPath"></td>
+                </tr>
+                <tr>
+                    <td>Database Server:</td>
+                    <td>
+                        <select style="width:100%" id="upgradeDBServer">
+                            <option value="REDSKULL\\SQLSERVER2014">REDSKULL\\SQLSERVER2014</option>
+                            <option value="devdb3\\sqlserver2008r2">devdb3\\sqlserver2008r2</option>
+                            <option value="REDSKULL\\SQLSERVER2012">REDSKULL\\SQLSERVER2012</option>
+                            <option value="devdb4\\SQLSERVER2016">devdb4\\SQLSERVER2016</option>
+                            <option value="REDSKULL\\SQLSERVER2008R2">REDSKULL\\SQLSERVER2008R2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Database Name:</td>
+                    <td><input style="width:100%;text-align: left" type="text" id="newDbName"></td>
+                </tr>
+            </table>
+            <br>
+            <button style="margin-left: 900px" id="editConfiguration" class="submitButton" onclick="editConfiguration()">Edit</button>
+            <br><br>
+        </td>
+    </tr>
+</table>
+<br><br><br><br><br>
+<hr>
+<br>
+<div><button style="margin-left: 1450px" class="button" onclick="configureBuild()">Configure Build</button><label style="margin-left:20px;display: none" id="verifyConfigurationLabel">Verifying Configuration...</label></div>
+<br>
+<table id="configStatus" style="margin-left:550px;width:40%;visibility: visible">
+    <tr bgcolor= #7fffd4>
+        <th style="width:70%">Configuration Step</th>
+        <th style="width:60%">Status</th>
+    </tr>
+    <tr>
+        <td>Copy Build</td>
+        <td><img id="imgUpgCopyBuild" style="display:none;width:10%" src="resources/subprocessing.gif"></td>
+    </tr>
+    <tr>
+        <td>Unzip Build</td>
+        <td><img id="imgUpgunzBuild" style="display:none;width:10%" src="resources/subprocessing.gif"></td>
+    </tr>
+    <tr>
+        <td>Create Database</td>
+        <td><img id="imgUpgCreateDB" style="display:none;width:10%" src="resources/subprocessing.gif"></td>
+    </tr>
+    <tr>
+        <td>Apply Patch</td>
+        <td><img id="imgUpgApplyPatch" style="display:none;width:10%" src="resources/subprocessing.gif"></td>
+    </tr>
+    <tr>
+        <td>Update DB Configuration File</td>
+        <td><img id="imgUpgUpdDBConf" style="display:none;width:10%" src="resources/subprocessing.gif"></td>
+    </tr>
+    <tr>
+        <td>Update Config.xml</td>
+        <td><img id="imgUpdConfigEIT" style="display:none;width:10%" src="resources/subprocessing.gif"></td>
+    </tr>
+    <tr>
+        <td>Drop DB</td>
+        <td><img id="imgUpgDrpDB" style="display:none;width:10%" src="resources/subprocessing.gif"></td>
+    </tr>
+</table>
+
+<!--<button id="runUpgradeConfigButton" style="background-color:yellow;margin-left:auto;margin-right:auto;display:block" type="button" onClick="runConfig(this.id)">Configure and setup build</button>
+<br><br>-->
+<br><br>
+<!--<br><br>
+<br>
+<hr>
+<h2 style="text-align:left">Setup Progress:</h2>
+<ul>
+<li>Copy build&nbsp;&nbsp;<img id="imgUpgCopyBuild" style="display:none" width="10" height="10" src="resources/subprocessing.gif"></li>
+<li>Unzip build&nbsp;&nbsp;<img id="imgUpgunzBuild" style="display:none" width="10" height="10" src="resources/subprocessing.gif"></li>
+<li>Create database&nbsp;&nbsp;<img id="imgUpgCreateDB" style="display:none" width="10" height="10" src="resources/subprocessing.gif"></li>
+<li>Update Database-config.xml&nbsp;&nbsp;<img id="imgUpgUpdDBConf" style="display:none;width:10%" width="10" height="10" src="resources/subprocessing.gif"></li>
+<li>Apply patch&nbsp;&nbsp;<img id="imgApplyPatch" style="display:none" width="10" height="10" src="resources/subprocessing.gif"></li>
+<li>Update Config.xml<span id="spnConfigUpdate" style="display:inline"><br>(EnableInternalDebugTools)&nbsp;&nbsp;<img id="imgUpdConfigEIT" style="display:none" width="10" height="10" src="resources/subprocessing.gif"></span></lir>
+<li>Drop DB&nbsp;&nbsp;<img id="imgUpgDrpDB" style="display:none;width:10%" src="resources/subprocessing.gif"></li>
+</ul><br>
+<div id="skm_LockPane" class="LockOff">
+	<img id="loading-image" src="resources/processing.gif" alt="Loading..."/>		
+</div>-->
+<script type="text/javascript" src='ProcessAutomation.js'></script>
+<div id="skm_LockPane" class="LockOff">
+    <img id="loading-image" src="resources/processing.gif" alt="Loading..."/>
+</div>
+</body>
+</html>
+
